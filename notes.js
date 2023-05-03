@@ -796,20 +796,23 @@ const animes = [
   },
 ];
 
-// const high = animes.reduce((low, high) => {
-//   if (high > low) {
-//     return high;
-//   } else {
-//     return low;
-//   }
-// });
-// console.log(high);
-
-function rollDice(numSides) {
-  if (numSides === undefined) {
-    numSides = 6;
+const high = animes.reduce((low, high) => {
+  if (high > low) {
+    return high;
+  } else {
+    return low;
   }
-  return Math.floor(Math.random() * numSides) + 1;
-}
+});
+console.log(high);
 
-console.log(rollDice(6));
+// function rollDice(numSides) {
+//   if (numSides === undefined) {
+//     numSides = 6;
+//   }
+//   return Math.floor(Math.random() * numSides) + 1;
+// }
+
+// console.log(rollDice(6));
+
+//DEFAULT PARAMETER//
+// const greet = (person, msg = 'Hello there!') => console.log(`${msg} ${person}`);
