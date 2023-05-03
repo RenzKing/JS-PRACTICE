@@ -818,3 +818,11 @@ console.log(high);
 // const greet = (person, msg = 'Hello there!') => console.log(`${msg} ${person}`);
 
 //SPREAD OPERATOR//
+
+const nums = [9, 3, 4, 6];
+const num = [91, 12, 33, 55];
+
+const max = console.log(...num);
+const maxs = console.log(...nums);
+console.log(max);
+console.log(maxs);
