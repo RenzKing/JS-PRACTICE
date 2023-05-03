@@ -688,20 +688,6 @@
 
 //   console.log(scoring.madeTheShot());
 
-const names = [
-  {
-    firstName: `Renz`,
-    middleName: `King`,
-    lastName: `Gayacao`,
-  },
-
-  {
-    firstName: `Mary`,
-    middleName: `Grace`,
-    lastName: `Manansala`,
-  },
-];
-
 // const fName = names.map(pangalan => pangalan.firstName);
 
 // const mName = names.map(function (pangalan) {
@@ -782,8 +768,30 @@ const names = [
 
 // console.log(test);
 
-const examScores = [8, 98, 92, 77, 74, 89, 88];
+// const examScores = [8, 98, 92, 77, 74, 89, 88];
 
-const check = examScores.some(score => score < 70);
+// const check = examScores.some(score => score < 70);
 
-console.log(check);
+// console.log(check);
+
+const animes = [
+  {
+    title: 'Naruto',
+    score: 100,
+  },
+
+  {
+    title: 'Capeta',
+    score: 98,
+  },
+
+  {
+    title: 'Hunter X Hunter',
+    score: 95,
+  },
+
+  {
+    title: 'Flame of Recca',
+    score: 90,
+  },
+];
