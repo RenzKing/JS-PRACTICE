@@ -795,3 +795,21 @@ const animes = [
     score: 90,
   },
 ];
+
+// const high = animes.reduce((low, high) => {
+//   if (high > low) {
+//     return high;
+//   } else {
+//     return low;
+//   }
+// });
+// console.log(high);
+
+function rollDice(numSides) {
+  if (numSides === undefined) {
+    numSides = 6;
+  }
+  return Math.floor(Math.random() * numSides) + 1;
+}
+
+console.log(rollDice(6));
