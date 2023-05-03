@@ -774,36 +774,36 @@
 
 // console.log(check);
 
-const animes = [
-  {
-    title: 'Naruto',
-    score: 100,
-  },
+// const animes = [
+//   {
+//     title: 'Naruto',
+//     score: 100,
+//   },
 
-  {
-    title: 'Capeta',
-    score: 98,
-  },
+//   {
+//     title: 'Capeta',
+//     score: 98,
+//   },
 
-  {
-    title: 'Hunter X Hunter',
-    score: 95,
-  },
+//   {
+//     title: 'Hunter X Hunter',
+//     score: 95,
+//   },
 
-  {
-    title: 'Flame of Recca',
-    score: 90,
-  },
-];
+//   {
+//     title: 'Flame of Recca',
+//     score: 90,
+//   },
+// ];
 
-const high = animes.reduce((low, high) => {
-  if (high > low) {
-    return high;
-  } else {
-    return low;
-  }
-});
-console.log(high);
+// const high = animes.reduce((low, high) => {
+//   if (high > low) {
+//     return high;
+//   } else {
+//     return low;
+//   }
+// });
+// console.log(high);
 
 // function rollDice(numSides) {
 //   if (numSides === undefined) {
@@ -819,10 +819,44 @@ console.log(high);
 
 //SPREAD OPERATOR//
 
-const nums = [9, 3, 4, 6];
-const num = [91, 12, 33, 55];
+// const nums = [9, 3, 4, 6];
+// const num = [91, 12, 33, 55];
 
-const max = console.log(...num);
-const maxs = console.log(...nums);
-console.log(max);
-console.log(maxs);
+// const max = console.log(...num);
+// const maxs = console.log(...nums);
+// console.log(max);
+// console.log(maxs);
+
+// console.log(...'spread testing');
+
+// SPREAD WITH ARRAY //
+
+// const students1 = ['Renz', 'King', 'Gayacao'];
+
+// const students2 = ['Mary', 'Grace', 'Manansala'];
+
+// const allStudents = [...students1, ...students2, 'Gaddi'];
+
+// console.log(...students1);
+// console.log(...students2);
+// console.log(allStudents);
+
+// SPREAD WITH OBJECTS //
+const student1 = {
+  fName: 'Renz',
+  lName: 'King',
+  isMale: true,
+};
+
+const student2 = {
+  fname: 'Mary',
+  lName: 'Grace',
+  isFemale: true,
+};
+
+const students = { ...student1, ...student2 };
+
+console.log(...[student1]);
+// console.log(...[student2]);
+// console.log(...[student1], ...[student2]);
+console.log(students);
