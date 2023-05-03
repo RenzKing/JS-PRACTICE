@@ -816,3 +816,5 @@ console.log(high);
 
 //DEFAULT PARAMETER//
 // const greet = (person, msg = 'Hello there!') => console.log(`${msg} ${person}`);
+
+//SPREAD OPERATOR//
