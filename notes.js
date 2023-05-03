@@ -842,21 +842,43 @@
 // console.log(allStudents);
 
 // SPREAD WITH OBJECTS //
-const student1 = {
+// const student1 = {
+//   fName: 'Renz',
+//   lName: 'King',
+//   isMale: true,
+// };
+
+// const student2 = {
+//   fname: 'Mary',
+//   lName: 'Grace',
+//   isFemale: true,
+// };
+
+// const students = { ...student1, ...student2 };
+
+// console.log(...[student1]);
+// // console.log(...[student2]);
+// // console.log(...[student1], ...[student2]);
+// console.log(students);
+
+const dataForm = {
   fName: 'Renz',
   lName: 'King',
   isMale: true,
 };
 
-const student2 = {
-  fname: 'Mary',
-  lName: 'Grace',
-  isFemale: true,
+const credentials = {
+  userName: 12345,
+  password: 67890,
+  email: `11@1adf`,
 };
 
-const students = { ...student1, ...student2 };
+const user1 = { ...dataForm, ...credentials };
 
-console.log(...[student1]);
-// console.log(...[student2]);
-// console.log(...[student1], ...[student2]);
-console.log(students);
+for (const key in user1) {
+  if (typeof user1[key] === `string`) {
+    user1[key] = user1[key].toUpperCase();
+  }
+}
+
+console.log(user1);
