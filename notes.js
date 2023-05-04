@@ -899,11 +899,27 @@
 //REST PARAMS//
 //COLLECTS ALL REMAINING ARGUMENTS INTO AN ACTUAL ARRAY
 
-function sum(...nums) {
-  let total = 0;
-  for (let n of nums) {
-    total += n;
-  }
-  return total;
-}
-sum(1, 2, 3, 4);
+// function sum(...nums) {
+//   let total = 0;
+//   for (let n of nums) {
+//     total += n;
+//   }
+//   return total;
+// }
+// sum(1, 2, 3, 4);
+
+//DESTRUCTURING//
+
+// const top1 = [0];
+// const top2 = [1];
+
+// //CORRECT WAY OF DESTRUCTRING//
+// const scores = [100, 95, 90, 85, 80];
+// // const [top1, top2, top3, top4, top5] = scores;
+
+// scores.sort(function (a, b) {
+//   return b - a;
+// });
+
+// const [top1, top2, top3, top4, top5] = scores;
+// console.log(top1, top2, top3, top4, top5);
