@@ -927,11 +927,11 @@
 
 //DESTRUCTURE AN OBJECT//
 
-// const dataFromForm = {
-//   fName: 'Renz',
-//   lName: 'King',
-//   email: `rk@gmail.com`,
-// };
+const dataFromForm = {
+  fName: 'Renz',
+  lName: 'King',
+  email: `rk@gmail.com`,
+};
 
 // const dataFromForm2 = {
 //   fName: 'Mary',
@@ -950,15 +950,13 @@
 
 //DESTRUCTURING PARAMS//
 
-const dataFromForm = {
-  fName: 'Renz',
-  lName: 'King',
-  email: `rk@gmail.com`,
-};
+// function fullName(data) {
+//   const { fName, lName } = data;
+//   return `${fName} ${lName}`;
+// }
 
-function fullName(data) {
-  const { fName, lName } = data;
-  return `${fName} ${lName}`;
-}
+// function fullName({ fname, lName }) {
+//   return `${fname} ${lName}`;
+// }
 
-console.log(fullName);
+// console.log(fullName);
