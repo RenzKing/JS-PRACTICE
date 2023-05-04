@@ -930,7 +930,6 @@
 const dataFromForm = {
   fName: 'Renz',
   lName: 'King',
-  email: 'rk@gmail.com',
 };
 
 const dataFromForm2 = {
