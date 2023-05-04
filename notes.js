@@ -861,24 +861,33 @@
 // // console.log(...[student1], ...[student2]);
 // console.log(students);
 
-const dataForm = {
-  fName: 'Renz',
-  lName: 'King',
-  isMale: true,
-};
+// const dataForm = {
+//   fName: 'Renz',
+//   lName: 'King',
+//   isMale: true,
+// };
 
-const credentials = {
-  userName: 12345,
-  password: 67890,
-  email: `11@1adf`,
-};
+// const credentials = {
+//   userName: 12345,
+//   password: 67890,
+//   email: `11@1adf`,
+// };
 
-const user1 = { ...dataForm, ...credentials };
+// const user1 = { ...dataForm, ...credentials };
 
-for (const key in user1) {
-  if (typeof user1[key] === `string`) {
-    user1[key] = user1[key].toUpperCase();
-  }
+// for (const key in user1) {
+//   if (typeof user1[key] === `string`) {
+//     user1[key] = user1[key].toUpperCase();
+//   }
+// }
+
+// console.log(user1);
+
+//REST PARAMS//
+
+function sum() {
+  console.log(arguments);
 }
+sum(); // NO VALUES COLLECTED
 
-console.log(user1);
+sum(1, 2, 3, 4); // WITH VALUES COLLECTED
