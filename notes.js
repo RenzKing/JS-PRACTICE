@@ -883,11 +883,27 @@
 
 // console.log(user1);
 
+//**ARGUMENTS OBJECT**//
+//-AVAILABLE INSIDE OF EVERY FUNCTIONS
+//-ARRAY-LIKE OBJECT
+//-CONTAINS ALL THE ARGUMENTS PASSED TO THE FUNCTION
+//- NOT AVAILABLE INSIDE OF ARROW FUNCTIONS
+
+// function sum() {
+//   console.log(arguments);
+// }
+// sum(); // NO VALUES COLLECTED
+
+// sum(1, 2); // WITH VALUES COLLECTED
+
 //REST PARAMS//
+//COLLECTS ALL REMAINING ARGUMENTS INTO AN ACTUAL ARRAY
 
-function sum() {
-  console.log(arguments);
+function sum(...nums) {
+  let total = 0;
+  for (let n of nums) {
+    total += n;
+  }
+  return total;
 }
-sum(); // NO VALUES COLLECTED
-
-sum(1, 2, 3, 4); // WITH VALUES COLLECTED
+sum(1, 2, 3, 4);
