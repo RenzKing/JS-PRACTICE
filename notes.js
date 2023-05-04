@@ -947,3 +947,18 @@
 // // const firsName = dataFromForm.fName;
 // // const lastName = dataFromForm.lName;
 // const { fName, lName, email = 'N/A' } = dataFromForm;
+
+//DESTRUCTURING PARAMS//
+
+const dataFromForm = {
+  fName: 'Renz',
+  lName: 'King',
+  email: `rk@gmail.com`,
+};
+
+function fullName(data) {
+  const { fName, lName } = data;
+  return `${fName} ${lName}`;
+}
+
+console.log(fullName);
