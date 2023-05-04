@@ -917,9 +917,34 @@
 // const scores = [100, 95, 90, 85, 80];
 // // const [top1, top2, top3, top4, top5] = scores;
 
+// const [top1, top2, top3, top4, top5] = scores;
+// console.log(top1, top2, top3, top4, top5);
+// const [top1, top2, ...withHonors] = scores;
+
 // scores.sort(function (a, b) {
 //   return b - a;
 // });
 
-// const [top1, top2, top3, top4, top5] = scores;
-// console.log(top1, top2, top3, top4, top5);
+//DESTRUCTURE AN OBJECT//
+
+const dataFromForm = {
+  fName: 'Renz',
+  lName: 'King',
+  email: 'rk@gmail.com',
+};
+
+const dataFromForm2 = {
+  fName: 'Mary',
+  lName: 'Grace',
+  email: 'mg@gmail.com',
+};
+
+const dataFromForm3 = {
+  fName: 'Rev',
+  lName: 'Audentius',
+  email: 'Ra@gmail.com',
+};
+
+// const firsName = dataFromForm.fName;
+// const lastName = dataFromForm.lName;
+const { fName: firstName, lName: lastName, email: emailAdd } = dataFromForm;
