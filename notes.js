@@ -392,6 +392,15 @@
 //   s4: 96,
 // };
 
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+console.log(`============`);
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let num of nums) {
+  console.log(num);
+}
+
 // for (let student in studentsGrade) {
 //   console.log(`${student} got ${studentsGrade[student]}`);
 // }
