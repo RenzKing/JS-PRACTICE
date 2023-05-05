@@ -402,20 +402,19 @@
 //   console.log(i);
 // }
 
-let num = 0;
-while (num < 10) {
-  num++;
-  console.log(num);
-}
+// let nums = 0;
+// while (nums < 10) {
+//   console.log(nums);
+//   nums++;
+// }
 
-console.log('==========');
+// console.log('==========');
 
-let nums = 0;
-
-while (nums < 10) {
-  num += 2;
-  console.log(nums);
-}
+// let num = 0;
+// while (num < 10) {
+//   console.log(num);
+//   num += 2;
+// }
 
 // for (let student in studentsGrade) {
 //   console.log(`${student} got ${studentsGrade[student]}`);
@@ -822,7 +821,7 @@ while (nums < 10) {
 // ];
 
 // const high = animes.reduce((low, high) => {
-//   if (high > low) {
+//   if (high.score < low.score) {
 //     return high;
 //   } else {
 //     return low;
@@ -952,11 +951,11 @@ while (nums < 10) {
 
 //DESTRUCTURE AN OBJECT//
 
-const dataFromForm = {
-  fName: 'Renz',
-  lName: 'King',
-  email: `rk@gmail.com`,
-};
+// const dataFromForm = {
+//   fName: 'Renz',
+//   lName: 'King',
+//   email: `rk@gmail.com`,
+// };
 
 // const dataFromForm2 = {
 //   fName: 'Mary',
@@ -985,3 +984,5 @@ const dataFromForm = {
 // }
 
 // console.log(fullName);
+
+//DOM (DATA OBJECT MODEL)//
