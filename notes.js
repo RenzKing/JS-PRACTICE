@@ -392,13 +392,29 @@
 //   s4: 96,
 // };
 
-for (let i = 0; i < 10; i++) {
-  console.log(i);
-}
-console.log(`============`);
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for (let num of nums) {
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let num of nums) {
+//   console.log(num);
+// }
+// console.log(`============`);
+
+// for (let i = 0; i <= nums.length; i++) {
+//   console.log(i);
+// }
+
+let num = 0;
+while (num < 10) {
+  num++;
   console.log(num);
+}
+
+console.log('==========');
+
+let nums = 0;
+
+while (nums < 10) {
+  num += 2;
+  console.log(nums);
 }
 
 // for (let student in studentsGrade) {
