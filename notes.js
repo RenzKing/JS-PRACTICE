@@ -1005,12 +1005,23 @@
 //***getElementByTagName()***//
 //The Element.getElementsByTagName()method returns a live HTML Collection of elements with the given tag name
 // const banner = document.getElementsByTagName('img');
-
 // for (let img of banner) {
 //   img.src = 'https://via.placeholder.com/300x300';
 // }
 
 //***getElementByClassName()***//
+// The getElementsByClassName()method returns a collection of elements with a specified class name(s).
+
+const images = document.getElementsByClassName('images');
+const images2 = document.getElementsByClassName('images2');
+
+for (let img of images) {
+  img.src = 'https://via.placeholder.com/300x300';
+}
+
+for (let img of images2) {
+  img.src = 'https://via.placeholder.com/500x500';
+}
 
 //***querySelector()***//
 
