@@ -1012,17 +1012,21 @@
 //***getElementByClassName()***//
 // The getElementsByClassName()method returns a collection of elements with a specified class name(s).
 
-const images = document.getElementsByClassName('images');
-const images2 = document.getElementsByClassName('images2');
+// const images = document.getElementsByClassName('images');
+// const images2 = document.getElementsByClassName('images2');
 
-for (let img of images) {
-  img.src = 'https://via.placeholder.com/300x300';
-}
+// for (let img of images) {
+//   img.src = 'https://via.placeholder.com/300x300';
+// }
 
-for (let img of images2) {
-  img.src = 'https://via.placeholder.com/500x500';
-}
+// for (let img of images2) {
+//   img.src = 'https://via.placeholder.com/500x500';
+// }
 
 //***querySelector()***//
+
+// The querySelector()is a method used for searching and returning the very first element within the document that matches the given selector.
+
+const para = document.querySelector('p');
 
 //***querySelectorAll()***//
