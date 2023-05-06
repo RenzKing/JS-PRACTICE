@@ -1004,15 +1004,14 @@
 
 //***getElementByTagName()***//
 //The Element.getElementsByTagName()method returns a live HTML Collection of elements with the given tag name
+// const banner = document.getElementsByTagName('img');
+
+// for (let img of banner) {
+//   img.src = 'https://via.placeholder.com/300x300';
+// }
 
 //***getElementByClassName()***//
 
 //***querySelector()***//
 
 //***querySelectorAll()***//
-
-const banner = document.getElementsByTagName('img');
-
-for (let i = 0; i < 5; i++) {
-  return;
-}
