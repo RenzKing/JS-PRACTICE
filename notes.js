@@ -1036,7 +1036,27 @@
 // const allparas = document.querySelectorAll('p');
 // const para2 = document.querySelector('#para2');
 // const para3 = document.getElementById('para2');
-const para4 = document.querySelectorAll('.para');
-// console.log(para2);
-// console.log(para3);
-console.log(para4);
+// const para4 = document.querySelectorAll('.para');
+// // console.log(para2);
+// // console.log(para3);
+// console.log(para4);
+
+// //PROPERTIES AND METHODS THE IMPORTANT ONES!!!//
+// classList();
+// getAttribute();
+// setAttribute();
+// appendChild();
+// append();
+// Prepend();
+// removeChild();
+// remove();
+// createElement();
+// innerText(); = The innerText property of the HTML Element interface represents the rendered text content of a node and its descendants.
+// textContent();
+// innerHTML();
+// value();
+// parentElement();
+// children();
+// nextSibling();
+// previousSibling();
+// style();
