@@ -991,7 +991,7 @@
 
 //DOM (DATA OBJECT MODEL)//
 //The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.
-//DOCUMENT IS AN OBJECT. IT IS THE GATEWAY FOR US TO ACCESS TAGS, ID, CLASS AND ELEMENTS THRU DOT NOTATION. "DOCUMENT."
+//DOCUMENT IS AN OBJECT. IT IS THE GATEWAY FOR US TO ACCESS TAGS, ID, CLASS AND ELEMENTS THRU DOT NOTATION. "document."
 
 // steps //
 //1. SELECT
@@ -1027,6 +1027,10 @@
 
 // The querySelector()is a method used for searching and returning the very first element within the document that matches the given selector.
 
-const para = document.querySelector('p');
+// const para = document.querySelector('p');
 
 //***querySelectorAll()***//
+
+// The querySelectorAll()method returns all elements that matches a CSS selector(s)
+
+// const allparas = document.querySelectorAll('p');
