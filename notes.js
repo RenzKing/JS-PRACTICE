@@ -986,3 +986,6 @@
 // console.log(fullName);
 
 //DOM (DATA OBJECT MODEL)//
+
+const num = (x = 5, y = 10) => x + y;
+console.log(num());
