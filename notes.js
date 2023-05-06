@@ -1034,3 +1034,9 @@
 // The querySelectorAll()method returns all elements that matches a CSS selector(s)
 
 // const allparas = document.querySelectorAll('p');
+// const para2 = document.querySelector('#para2');
+// const para3 = document.getElementById('para2');
+const para4 = document.querySelectorAll('.para');
+// console.log(para2);
+// console.log(para3);
+console.log(para4);
