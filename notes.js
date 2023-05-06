@@ -24,6 +24,10 @@
 // // const arrow2 = (arrow3, arrow4) => {
 // // };
 
+//FUNCTION DEFAULT VALUE//
+// const num = (x = 5, y = 10) => x + y;
+// console.log(num());
+
 // //////// LOOP /////////
 
 // //Automate repetetive task//
@@ -986,6 +990,5 @@
 // console.log(fullName);
 
 //DOM (DATA OBJECT MODEL)//
-
-const num = (x = 5, y = 10) => x + y;
-console.log(num());
+//The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.
+//DOCUMENT IS AN OBJECT. IT IS THE GATEWAY FOR US TO ACCESS TAGS AND ELEMENTS THRU DOT NOTATION. "DOCUMENT."
