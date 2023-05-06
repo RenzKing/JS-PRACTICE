@@ -1003,9 +1003,16 @@
 //---The getElementById() is a Javascript function that lets you grab and HTML element, by its ID, and perform an action on it---//
 
 //***getElementByTagName()***//
+//The Element.getElementsByTagName()method returns a live HTML Collection of elements with the given tag name
 
 //***getElementByClassName()***//
 
 //***querySelector()***//
 
 //***querySelectorAll()***//
+
+const banner = document.getElementsByTagName('img');
+
+for (let i = 0; i < 5; i++) {
+  return;
+}
