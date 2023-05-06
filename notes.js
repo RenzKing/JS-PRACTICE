@@ -991,4 +991,21 @@
 
 //DOM (DATA OBJECT MODEL)//
 //The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.
-//DOCUMENT IS AN OBJECT. IT IS THE GATEWAY FOR US TO ACCESS TAGS AND ELEMENTS THRU DOT NOTATION. "DOCUMENT."
+//DOCUMENT IS AN OBJECT. IT IS THE GATEWAY FOR US TO ACCESS TAGS, ID, CLASS AND ELEMENTS THRU DOT NOTATION. "DOCUMENT."
+
+// steps //
+//1. SELECT
+//2.MANIPULATE
+
+//5 SELECTING METHODS//
+
+//***getElementById()***//
+//---The getElementById() is a Javascript function that lets you grab and HTML element, by its ID, and perform an action on it---//
+
+//***getElementByTagName()***//
+
+//***getElementByClassName()***//
+
+//***querySelector()***//
+
+//***querySelectorAll()***//
