@@ -1052,6 +1052,8 @@
 // remove();
 // createElement();
 // innerText(); = The innerText property of the HTML Element interface represents the rendered text content of a node and its descendants.
+const h1 = document.querySelector('h1'); // or document.querySelector("h1").innerText;
+h1.innerText = 'Hello ReactJS!';
 // textContent();
 // innerHTML();
 // value();
