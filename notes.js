@@ -1053,14 +1053,22 @@
 
 // getAttribute(); = The getAttribute() method of the element interface returns the value of a specified attribute on the element.
 
-const banner = document.querySelector('img');
-const imgSrc = banner.getAttribute('src');
+// const banner = document.querySelector('img');
+// const imgSrc = banner.getAttribute('src');
+// const imgWidth = banner.getAttribute('width');
+// const imgId = banner.getAttribute('id');
 
-console.log(imgSrc);
+// const banner2 = document.querySelector('#banner2');
+// const renz = banner2.getAttribute('id');
+
+// console.log(imgSrc);
+// console.log(imgWidth);
+// console.log(imgId);
+// console.log(renz);
 
 // ******************** //
 
-// setAttribute();
+// setAttribute(); = The setAttribute() method sets a new value to an attribute
 
 // ******************** //
 // appendChild();
