@@ -1051,7 +1051,7 @@
 
 // ******************** //
 
-// getAttribute();
+// getAttribute(); = The getAttribute() method of the element interface returns the value of a specified attribute on the element.
 
 // ******************** //
 
@@ -1123,3 +1123,8 @@
 // style();
 
 // ******************** //
+
+// Attributes = Accessing and changing the value//
+
+const banner = (document.querySelector('#banner').src =
+  'https://via.placeholder.com/1200x300');
