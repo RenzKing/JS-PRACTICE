@@ -1041,24 +1041,85 @@
 // // console.log(para3);
 // console.log(para4);
 
+// ******************** //
+
 // //PROPERTIES AND METHODS THE IMPORTANT ONES!!!//
+
+// ******************** //
+
 // classList();
+
+// ******************** //
+
 // getAttribute();
+
+// ******************** //
+
 // setAttribute();
+
+// ******************** //
 // appendChild();
+
+// ******************** //
+
 // append();
+
+// ******************** //
+
 // Prepend();
+
+// ******************** //
+
 // removeChild();
+
+// ******************** //
+
 // remove();
+
+// ******************** //
+
 // createElement();
+
+// ******************** //
+
 // innerText(); = The innerText property of the HTML Element interface represents the rendered text content of a node and its descendants.
-const h1 = document.querySelector('h1'); // or document.querySelector("h1").innerText;
-h1.innerText = 'Hello ReactJS!';
-// textContent();
-// innerHTML();
+// const h1 = document.querySelector('h1'); // or document.querySelector("h1").innerText;
+// h1.innerText = 'Hello ReactJS!';
+
+// ******************** //
+
+// // textContent(); = The textContent is the DOM property that is used to set text content for the HTML element or get the text content written inside that element.
+
+// const para = document.querySelector('p');
+
+// para.textContent = 'Hello JavaScrippt!';
+// para.innerText;
+
+// ******************** //
+
+// innerHTML(); = The inner HTML property can be used to write the dynamic html on document. It is used mostly in the web pages to generate the dynamic html such as registration form, comment form,links etc.
+
+const para = document.querySelectorAll('p');
+para.innerHTML = 'Hello webdev';
+
+console.log(para.innerHTML);
+
+// ******************** //
 // value();
+
+// ******************** //
 // parentElement();
+
+// ******************** //
 // children();
+
+// ******************** //
 // nextSibling();
+
+// ******************** //
 // previousSibling();
+
+// ******************** //
 // style();
+
+// ******************** //
