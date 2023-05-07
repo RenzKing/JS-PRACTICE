@@ -1099,10 +1099,10 @@
 
 // innerHTML(); = The inner HTML property can be used to write the dynamic html on document. It is used mostly in the web pages to generate the dynamic html such as registration form, comment form,links etc.
 
-const para = document.querySelectorAll('p');
-para.innerHTML = 'Hello webdev';
+// const para = document.querySelector('p');
+// para.innerHTML = 'Hello webdev';
 
-console.log(para.innerHTML);
+// // console.log(para.innerHTML);
 
 // ******************** //
 // value();
