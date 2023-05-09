@@ -1165,6 +1165,7 @@ heading.setAttribute('class', `purple`);
 heading.classList.add('purple');
 heading.classList.add('border');
 heading.classList.remove('border');
+heading.classList.contains('border');
 
 // heading.style.backgroundColor = '#000';
 heading.style.color = 'blue';
