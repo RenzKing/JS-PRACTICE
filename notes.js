@@ -1070,6 +1070,13 @@
 
 // setAttribute(); = The setAttribute() method sets a new value to an attribute
 
+// const banner = document.querySelector('img');
+// const bannerIn = banner.getAttribute('src');
+// const bannerSet = banner.setAttribute('width', '500');
+
+// const width = banner.getAttribute('width');
+// console.log(width);
+
 // ******************** //
 // appendChild();
 
@@ -1138,3 +1145,9 @@
 // ******************** //
 
 // Attributes = Accessing and changing the value//
+
+const banner = document.getElementById('banner');
+
+// customized //
+banner.setAttribute('width', 200);
+banner.setAttribute('height', 300);
