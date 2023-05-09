@@ -1146,11 +1146,11 @@
 
 // Attributes = Accessing and changing the value//
 
-const banner = document.getElementById('banner');
+// const banner = document.getElementById('banner');
 
-// customized //
-banner.setAttribute('width', 200);
-banner.setAttribute('height', 300);
+// // customized //
+// banner.setAttribute('width', 200);
+// banner.setAttribute('height', 300);
 
-banner.removeAttribute('height');
-banner.removeAttribute('width');
+// banner.removeAttribute('height');
+// banner.removeAttribute('width');
