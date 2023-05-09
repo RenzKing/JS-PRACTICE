@@ -1080,9 +1080,9 @@
 // ******************** //
 // append(); = The append() method inserts specified content at the end of selected elements.
 
-const h1 = document.querySelector('h1');
-h1.append('-Hello Javascript');
-h1.append('-Hello JS');
+// const h1 = document.querySelector('h1');
+// h1.append('-Hello Javascript');
+// h1.append('-Hello JS');
 
 // ******************** //
 
@@ -1104,7 +1104,11 @@ h1.append('-Hello JS');
 
 // ******************** //
 
-// Prepend();
+// Prepend(); = prepend() method inserts a set of Node objects or string objects before the first child of the element.
+
+const h1 = document.querySelector('h1');
+h1.prepend('Hello Javascript!');
+h1.prepend('Hello Javascript!');
 
 // ******************** //
 
