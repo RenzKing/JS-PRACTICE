@@ -1164,3 +1164,7 @@ heading.style.color = 'blue';
 heading.style.textAlign = 'center';
 heading.style.fontSize = '40px';
 heading.style.border = '2px solid red';
+
+for (let p of allParas) {
+  p.style.color = 'blue';
+}
