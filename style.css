@@ -2,3 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+.purple {
+  background-color: brown;
+}
+.border {
+  background-color: rgb(255, 3, 3);
+}

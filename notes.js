@@ -1047,7 +1047,7 @@
 
 // ******************** //
 
-// classList();
+// classList(); = The Element.classList is a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can be used to manipulate the class list
 
 // ******************** //
 
@@ -1158,8 +1158,15 @@
 //FETCHER or SELECT //
 const heading = document.querySelector('h1');
 const allParas = document.querySelectorAll('p');
+
 // STYLE OR MANIPULATE//
-heading.style.backgroundColor = '#000';
+heading.setAttribute('class', `purple`);
+
+heading.classList.add('purple');
+heading.classList.add('border');
+heading.classList.remove('border');
+
+// heading.style.backgroundColor = '#000';
 heading.style.color = 'blue';
 heading.style.textAlign = 'center';
 heading.style.fontSize = '40px';
@@ -1168,3 +1175,6 @@ heading.style.border = '2px solid red';
 for (let p of allParas) {
   p.style.color = 'blue';
 }
+
+// // TO CHECK CURRENT PROPERTY OR STYLE //
+// window.getComputedStyle(heading).textAlign;
