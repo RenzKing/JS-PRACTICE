@@ -1157,27 +1157,31 @@
 
 //FETCHER or SELECT //
 const heading = document.querySelector('h1');
-const allParas = document.querySelectorAll('p');
+// const allParas = document.querySelectorAll('p');
 
 // STYLE OR MANIPULATE//
 heading.setAttribute('class', `purple`);
-
 heading.classList.add('purple');
 heading.classList.add('border');
 heading.classList.remove('border');
 heading.classList.contains('border');
 heading.classList.contains('purple');
 heading.classList.toggle('border');
-
-// heading.style.backgroundColor = '#000';
+heading.style.backgroundColor = '#000';
 heading.style.color = 'blue';
 heading.style.textAlign = 'center';
 heading.style.fontSize = '40px';
 heading.style.border = '2px solid red';
 
-for (let p of allParas) {
-  p.style.color = 'blue';
-}
+// for (let p of allParas) {
+//   p.style.color = 'blue';
+// }
 
 // // TO CHECK CURRENT PROPERTY OR STYLE //
 // window.getComputedStyle(heading).textAlign;
+
+const bold = document.querySelector('strong');
+const assortedElements = bold.parentElement.parentElement.parentElement;
+const count = assortedElements.childElementCount;
+
+console.log(count);
