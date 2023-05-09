@@ -1131,9 +1131,9 @@
 
 // remove(); = the Remove() method removes an element(or node) from the document.
 
-const p = document.querySelector('p');
-p.style.backgroundColor = 'blue';
-p.remove();
+// const p = document.querySelector('p');
+// p.style.backgroundColor = 'blue';
+// p.remove();
 
 // ******************** //
 
