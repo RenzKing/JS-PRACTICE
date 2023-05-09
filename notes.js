@@ -1078,17 +1078,29 @@
 // console.log(width);
 
 // ******************** //
-// appendChild();
+// append(); = The append() method inserts specified content at the end of selected elements.
+
+const h1 = document.querySelector('h1');
+h1.append('-Hello Javascript');
+h1.append('-Hello JS');
 
 // ******************** //
 
-// append(); The appendChild() method of the node interface adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appndChild() moves it from its current position to the new position.
+// appendChild();= The appendChild() method of the node interface adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appndChild() moves it from its current position to the new position.
 
-const newImage = document.createElement('img');
+// const newImage = document.createElement('img');
 
-newImage.src = 'https://via.placeholder.com/1200x300';
-newImage.setAttribute('width', 500);
-document.body.appendChild(newImage);
+// newImage.src = 'https://via.placeholder.com/1200x300';
+// newImage.setAttribute('width', 500);
+// document.body.appendChild(newImage);
+// newImage.classList.add('banner');
+
+// const h2 = document.createElement('h2');
+// h2.classList.add('sub-header');
+// h2.textContent = 'Hello Javascript';
+// h2.style.backgroundColor = 'blue';
+
+// document.body.appendChild(h2);
 
 // ******************** //
 
