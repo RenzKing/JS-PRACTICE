@@ -1154,3 +1154,8 @@
 
 // banner.removeAttribute('height');
 // banner.removeAttribute('width');
+
+const heading = document.querySelector('h1');
+// const h12 = document.getElementsByTagName('h1');
+
+heading.style.backgroundColor = '#000';
