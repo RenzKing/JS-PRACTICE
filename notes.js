@@ -1106,10 +1106,21 @@
 
 // Prepend(); = prepend() method inserts a set of Node objects or string objects before the first child of the element.
 
-const h1 = document.querySelector('h1');
-h1.prepend('Hello Javascript!');
-h1.prepend('Hello Javascript!');
+// const h1 = document.querySelector('h1');
+// const newElement = document.createElement('em');
+// newElement.append('Hello JS');
+// h1.prepend(newElement);
 
+// Create the element first //
+const h2 = document.createElement('h2');
+//Add the content by using append();//
+h2.append('DOM Manipulation is fun!');
+// Select h1 //
+const h1 = document.querySelector('h1');
+// // Add the h2 the h1 using appendChild(h2)//
+// h1.appendChild(h2);
+// Then, add the new element after h1
+h1.insertAdjacentElement('afterend', h2);
 // ******************** //
 
 // removeChild();
