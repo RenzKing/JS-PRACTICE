@@ -1087,7 +1087,7 @@
 const newImage = document.createElement('img');
 
 newImage.src = 'https://via.placeholder.com/1200x300';
-
+newImage.setAttribute('width', 500);
 document.body.appendChild(newImage);
 
 // ******************** //
