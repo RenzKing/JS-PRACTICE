@@ -1123,9 +1123,17 @@
 
 // removeChild(); = The removeChild() method of the Node interface removes a child node from the DOM and retrns the removed node.
 
+// const body = document.querySelector(`body`);
+// const h1 = document.querySelector('h1');
+// body.remove('h1');
+
 // ******************** //
 
-// remove();
+// remove(); = the Remove() method removes an element(or node) from the document.
+
+const p = document.querySelector('p');
+p.style.backgroundColor = 'blue';
+p.remove();
 
 // ******************** //
 
