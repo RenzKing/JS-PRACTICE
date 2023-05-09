@@ -1166,6 +1166,8 @@ heading.classList.add('purple');
 heading.classList.add('border');
 heading.classList.remove('border');
 heading.classList.contains('border');
+heading.classList.contains('purple');
+heading.classList.toggle('border');
 
 // heading.style.backgroundColor = '#000';
 heading.style.color = 'blue';
