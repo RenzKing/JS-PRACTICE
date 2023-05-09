@@ -1155,9 +1155,10 @@
 // banner.removeAttribute('height');
 // banner.removeAttribute('width');
 
+//FETCHER or SELECT //
 const heading = document.querySelector('h1');
-// const h12 = document.getElementsByTagName('h1');
-
+const allParas = document.querySelectorAll('p');
+// STYLE OR MANIPULATE//
 heading.style.backgroundColor = '#000';
 heading.style.color = 'blue';
 heading.style.textAlign = 'center';
