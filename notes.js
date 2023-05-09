@@ -1082,7 +1082,13 @@
 
 // ******************** //
 
-// append();
+// append(); The appendChild() method of the node interface adds a node to the end of the list of children of a specified parent node. If the given child is a reference to an existing node in the document, appndChild() moves it from its current position to the new position.
+
+const newImage = document.createElement('img');
+
+newImage.src = 'https://via.placeholder.com/1200x300';
+
+document.body.appendChild(newImage);
 
 // ******************** //
 
@@ -1155,23 +1161,23 @@
 // banner.removeAttribute('height');
 // banner.removeAttribute('width');
 
-//FETCHER or SELECT //
-const heading = document.querySelector('h1');
-// const allParas = document.querySelectorAll('p');
+// //FETCHER or SELECT //
+// const heading = document.querySelector('h1');
+// // const allParas = document.querySelectorAll('p');
 
-// STYLE OR MANIPULATE//
-heading.setAttribute('class', `purple`);
-heading.classList.add('purple');
-heading.classList.add('border');
-heading.classList.remove('border');
-heading.classList.contains('border');
-heading.classList.contains('purple');
-heading.classList.toggle('border');
-heading.style.backgroundColor = '#000';
-heading.style.color = 'blue';
-heading.style.textAlign = 'center';
-heading.style.fontSize = '40px';
-heading.style.border = '2px solid red';
+// // STYLE OR MANIPULATE//
+// heading.setAttribute('class', `purple`);
+// heading.classList.add('purple');
+// heading.classList.add('border');
+// heading.classList.remove('border');
+// heading.classList.contains('border');
+// heading.classList.contains('purple');
+// heading.classList.toggle('border');
+// heading.style.backgroundColor = '#000';
+// heading.style.color = 'blue';
+// heading.style.textAlign = 'center';
+// heading.style.fontSize = '40px';
+// heading.style.border = '2px solid red';
 
 // for (let p of allParas) {
 //   p.style.color = 'blue';
@@ -1180,8 +1186,11 @@ heading.style.border = '2px solid red';
 // // TO CHECK CURRENT PROPERTY OR STYLE //
 // window.getComputedStyle(heading).textAlign;
 
-const bold = document.querySelector('strong');
-const assortedElements = bold.parentElement.parentElement.parentElement;
-const count = assortedElements.childElementCount;
+// const bold = document.querySelector('strong');
+// const assortedElements = bold.parentElement.parentElement.parentElement;
+// const count = assortedElements.childElementCount;
 
-console.log(count);
+// console.log(count);
+
+// const image = document.querySelector('#img');
+// image.setAttribute('class', 'img');
