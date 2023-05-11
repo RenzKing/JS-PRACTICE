@@ -1245,3 +1245,12 @@ const ppp = document.getElementById('para1');
 ppp.innerHTML = '<strong><em>Hello JS!</em></strong>';
 
 const img3 = document.querySelector('#img3');
+
+const para0 = allParas[0].setAttribute('class', 'para0');
+
+const ooo = document.querySelector('.para0');
+ooo.textContent = 'testing';
+
+const img = document.getElementById('img');
+
+img.src = 'https://via.placeholder.com/1200x300 ';
