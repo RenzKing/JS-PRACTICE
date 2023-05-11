@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
 }
-
-.purple {
-  background-color: brown;
+.h1 {
+  color: yellow;
+  text-align: center;
+  border: 5px dotted black;
 }
-.border {
-  background-color: rgb(255, 3, 3);
+.h11 {
+  display: none;
 }
