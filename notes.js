@@ -1228,13 +1228,20 @@
 // const image = document.querySelector('#img');
 // image.setAttribute('class', 'img');
 
-const h1 = document.querySelector('h1');
-const p = document.querySelector('p');
+// const h1 = document.querySelector('h1');
+// const p = document.querySelector('p');
 
-h1.textContent = 'Hello JS';
-h1.style.backgroundColor = 'blue';
-p.style.backgroundColor = 'red';
+// h1.textContent = 'Hello JS';
+// h1.style.backgroundColor = 'blue';
+// p.style.backgroundColor = 'red';
 
-h1.setAttribute('class', 'h1');
+// h1.setAttribute('class', 'h1');
 
-const test = h1.getAttribute('class');
+// const test = h1.getAttribute('class');
+
+const allParas = document.querySelectorAll(`p`);
+const para1 = allParas[1].setAttribute('id', 'para1');
+const ppp = document.getElementById('para1');
+ppp.innerHTML = '<strong><em>Hello JS!</em></strong>';
+
+const img3 = document.querySelector('#img3');
