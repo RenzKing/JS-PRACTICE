@@ -1227,3 +1227,14 @@
 
 // const image = document.querySelector('#img');
 // image.setAttribute('class', 'img');
+
+const h1 = document.querySelector('h1');
+const p = document.querySelector('p');
+
+h1.textContent = 'Hello JS';
+h1.style.backgroundColor = 'blue';
+p.style.backgroundColor = 'red';
+
+h1.setAttribute('class', 'h1');
+
+const test = h1.getAttribute('class');
