@@ -1255,9 +1255,18 @@ const img = document.getElementById('img');
 
 img.src = 'https://via.placeholder.com/1200x300 ';
 
-const h1 = document.getElementsByTagName('h1');
-h1[1].setAttribute('class', 'h11');
-
+const h1 = document.querySelectorAll('h1');
+h1[0].classList.add('h1');
+h1[1].classList.add('h11');
 // h1.style.backgroundColor = 'yellow';
 // h1.style.textAlign = 'center';
 // h1.style.border = '5px dotted black';
+
+const students = ['renz', 'king', 'gayacao'];
+
+const ul = document.querySelector('ul');
+ul.innerHTML = 'li';
+
+for (li of students) {
+  console.log(li);
+}
