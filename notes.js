@@ -1239,34 +1239,37 @@
 
 // const test = h1.getAttribute('class');
 
-const allParas = document.querySelectorAll(`p`);
-const para1 = allParas[1].setAttribute('id', 'para1');
-const ppp = document.getElementById('para1');
-ppp.innerHTML = '<strong><em>Hello JS!</em></strong>';
+// const allParas = document.querySelectorAll(`p`);
+// const para1 = allParas[1].setAttribute('id', 'para1');
+// const ppp = document.getElementById('para1');
+// ppp.innerHTML = '<strong><em>Hello JS!</em></strong>';
 
-const img3 = document.querySelector('#img3');
+// const img3 = document.querySelector('#img3');
 
-const para0 = allParas[0].setAttribute('class', 'para0');
+// const para0 = allParas[0].setAttribute('class', 'para0');
 
-const ooo = document.querySelector('.para0');
-ooo.textContent = 'testing';
+// const ooo = document.querySelector('.para0');
+// ooo.textContent = 'testing';
 
-const img = document.getElementById('img');
+// const img = document.getElementById('img');
 
-img.src = 'https://via.placeholder.com/1200x300 ';
+// img.src = 'https://via.placeholder.com/1200x300 ';
 
-const h1 = document.querySelectorAll('h1');
-h1[0].classList.add('h1');
-h1[1].classList.add('h11');
-// h1.style.backgroundColor = 'yellow';
-// h1.style.textAlign = 'center';
-// h1.style.border = '5px dotted black';
+// const h1 = document.querySelectorAll('h1');
+// h1[0].classList.add('h1');
+// h1[1].classList.add('h11');
+// // h1.style.backgroundColor = 'yellow';
+// // h1.style.textAlign = 'center';
+// // h1.style.border = '5px dotted black';
 
 const students = ['renz', 'king', 'gayacao'];
 
-const ul = document.querySelector('ul');
-ul.innerHTML = 'li';
+const ol = document.querySelector('ol');
 
-for (li of students) {
-  console.log(li);
-}
+students.forEach(student => {
+  const li = document.createElement('li');
+  li.textContent = student;
+  ol.appendChild(li);
+});
+
+ol.classList.add('s');
