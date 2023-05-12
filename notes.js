@@ -1282,11 +1282,17 @@
 
 //addEventListener //
 
-// const button = document.querySelector('button');
+const button = document.querySelector('button');
+const btn2 = document.querySelector('#btn2');
 
 // button.style.backgroundColor = '#333';
 // button.style.borderRadius = '5px';
 // button.style.color = '#fff';
 // button.style.marginLeft = '5px';
 
-// button.setAttribute('onClick', 'alert("Hey")');
+button.setAttribute('onClick', 'alert("Hey")');
+btn2.setAttribute('ondblclick', 'alert("Heyhey!!!!")');
+
+const p = document.querySelector('p');
+p.setAttribute('onmouseover', 'alert("hovered!")');
+p.style.paddingTop = ' 100px';
