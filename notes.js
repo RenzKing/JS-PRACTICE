@@ -1290,9 +1290,16 @@ const btn2 = document.querySelector('#btn2');
 // button.style.color = '#fff';
 // button.style.marginLeft = '5px';
 
-button.setAttribute('onClick', 'alert("Hey")');
-btn2.setAttribute('ondblclick', 'alert("Heyhey!!!!")');
+// button.setAttribute('onClick', 'alert("Hey")');
+// button.style.marginRight = ' 100px';
+// btn2.setAttribute('ondblclick', 'alert("Heyhey!!!!")');
 
-const p = document.querySelector('p');
-p.setAttribute('onmouseover', 'alert("hovered!")');
-p.style.paddingTop = ' 100px';
+// const p = document.querySelector('p');
+// p.setAttribute('onmouseover', 'alert("hovered!")');
+// p.style.paddingTop = ' 100px';
+
+const greet = () => {
+  alert('hello');
+};
+
+btn2.ondblclick = greet;
