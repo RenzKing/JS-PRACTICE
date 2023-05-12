@@ -1282,11 +1282,11 @@
 
 //addEventListener //
 
-const button = document.querySelector('button');
+// const button = document.querySelector('button');
 
-button.style.backgroundColor = '#333';
-button.style.borderRadius = '5px';
-button.style.color = '#fff';
-button.style.marginLeft = '5px';
+// button.style.backgroundColor = '#333';
+// button.style.borderRadius = '5px';
+// button.style.color = '#fff';
+// button.style.marginLeft = '5px';
 
-button.setAttribute('onClick', 'alert("Hey")');
+// button.setAttribute('onClick', 'alert("Hey")');
