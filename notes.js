@@ -1280,8 +1280,6 @@
 
 // Onclick Property in JS file //
 
-//addEventListener //
-
 const button = document.querySelector('button');
 const btn2 = document.querySelector('#btn2');
 
@@ -1298,8 +1296,12 @@ const btn2 = document.querySelector('#btn2');
 // p.setAttribute('onmouseover', 'alert("hovered!")');
 // p.style.paddingTop = ' 100px';
 
-const greet = () => {
-  alert('hello');
-};
+// const greet = () => {
+//   alert('hello');
+// };
 
-btn2.ondblclick = greet;
+// btn2.ondblclick = greet;
+
+// document.querySelector('h1').onmouseover = () => alert('hovered!');
+
+//addEventListener = The Javascript addEventListener() method allows you to setup function to be called when a specified event happens, such as when a user clicks a button//
