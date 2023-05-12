@@ -1262,14 +1262,16 @@
 // // h1.style.textAlign = 'center';
 // // h1.style.border = '5px dotted black';
 
-const students = ['renz', 'king', 'gayacao'];
+// const students = ['renz', 'king', 'gayacao'];
 
-const ol = document.querySelector('ol');
+// const ol = document.querySelector('ol');
 
-students.forEach(student => {
-  const li = document.createElement('li');
-  li.textContent = student;
-  ol.appendChild(li);
-});
+// students.forEach(student => {
+//   const li = document.createElement('li');
+//   li.textContent = student;
+//   ol.appendChild(li);
+// });
 
-ol.classList.add('s');
+// ol.classList.add('s');
+
+// EVENTS //
