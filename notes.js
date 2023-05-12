@@ -1274,4 +1274,19 @@
 
 // ol.classList.add('s');
 
-// EVENTS //
+// EVENT = Javascript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the loads, it is call an event. When the user clicks a button, that click too is an event. //
+
+// inline Events //
+
+// Onclick Property in JS file //
+
+//addEventListener //
+
+const button = document.querySelector('button');
+
+button.style.backgroundColor = '#333';
+button.style.borderRadius = '5px';
+button.style.color = '#fff';
+button.style.marginLeft = '5px';
+
+button.setAttribute('onClick', 'alert("Hey")');
