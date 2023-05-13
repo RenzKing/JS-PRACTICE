@@ -1312,6 +1312,10 @@
 
 // button.addEventListener('click', greet);
 
+const buttons = document.querySelectorAll('button');
+const body = document.querySelector('body');
+const paras = document.querySelectorAll('p');
+
 const randomColorGenerator = () => {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
@@ -1319,11 +1323,16 @@ const randomColorGenerator = () => {
   return `rgb(${r},${g},${b})`;
 };
 
-const buttons = document.querySelectorAll('button');
+const colorizer = function () {
+  body.style.background = randomColorGenerator();
+  this.style.background = randomColorGenerator();
+  this.style.color = randomColorGenerator();
+};
+
+for (let para of paras) {
+  para.addEventListener('mouseover', colorizer);
+}
 
 for (let btn of buttons) {
-  btn.addEventListener('click', function () {
-    btn.style.background = randomColorGenerator();
-    btn.style.color = randomColorGenerator();
-  });
+  btn.addEventListener('click', colorizer);
 }
