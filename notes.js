@@ -1280,8 +1280,8 @@
 
 // Onclick Property in JS file //
 
-const button = document.querySelector('button');
-const btn2 = document.querySelector('#btn2');
+// const button = document.querySelector('button');
+// const btn2 = document.querySelector('#btn2');
 
 // button.style.backgroundColor = '#333';
 // button.style.borderRadius = '5px';
@@ -1300,8 +1300,30 @@ const btn2 = document.querySelector('#btn2');
 //   alert('hello');
 // };
 
-// btn2.ondblclick = greet;
+// // btn2.ondblclick = greet;
 
-// document.querySelector('h1').onmouseover = () => alert('hovered!');
+// // document.querySelector('h1').onmouseover = () => alert('hovered!');
 
-//addEventListener = The Javascript addEventListener() method allows you to setup function to be called when a specified event happens, such as when a user clicks a button//
+// //addEventListener = The Javascript addEventListener() method allows you to setup function to be called when a specified event happens, such as when a user clicks a button//
+
+// button.addEventListener('click', () => {
+//   alert('DOM MANIPULATION IS FUN!');
+// });
+
+// button.addEventListener('click', greet);
+
+const randomColorGenerator = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r},${g},${b})`;
+};
+
+const buttons = document.querySelectorAll('button');
+
+for (let btn of buttons) {
+  btn.addEventListener('click', function () {
+    btn.style.background = randomColorGenerator();
+    btn.style.color = randomColorGenerator();
+  });
+}

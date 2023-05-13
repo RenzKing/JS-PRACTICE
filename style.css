@@ -2,7 +2,10 @@
   margin: auto;
   padding: auto;
 }
-.s {
+button {
   text-decoration: dotted;
-  margin-left: 10px;
+  margin: 20px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
 }
