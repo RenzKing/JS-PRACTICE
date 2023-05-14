@@ -1359,12 +1359,13 @@ button.style.marginTop = '50px';
 
 // PARAGRAPH //
 
-const paras = document.createElement('p');
-paras.textContent = 'HELLO JAVASCRIPT';
-paras.style.border = '2px solid black';
-paras.style.marginTop = '20px';
-paras.addEventListener('click', greet);
-paras.addEventListener('mouseover', colorizer);
+const p = document.createElement('p');
+const paras = document.querySelector('p');
+p.textContent = 'HELLO JAVASCRIPT';
+p.style.border = '2px solid black';
+p.style.marginTop = '20px';
+p.addEventListener('click', greet);
+p.addEventListener('mouseover', colorizer);
 
 // BODY FUNCTION //
 const body = () => {
