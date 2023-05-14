@@ -1312,27 +1312,43 @@
 
 // button.addEventListener('click', greet);
 
-const buttons = document.querySelectorAll('button');
-const body = document.querySelector('body');
-const paras = document.querySelectorAll('p');
+// RANDOM COLOR GENERATOR //
 
-const randomColorGenerator = () => {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  return `rgb(${r},${g},${b})`;
+// const buttons = document.querySelectorAll('button');
+// const body = document.querySelector('body');
+// const paras = document.querySelectorAll('p');
+
+// const randomColorGenerator = () => {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r},${g},${b})`;
+// };
+
+// const colorizer = function () {
+//   body.style.background = randomColorGenerator();
+//   this.style.background = randomColorGenerator();
+//   this.style.color = randomColorGenerator();
+// };
+
+// for (let para of paras) {
+//   para.addEventListener('mouseover', colorizer);
+// }
+
+// for (let btn of buttons) {
+//   btn.addEventListener('click', colorizer);
+// }
+
+const h1 = document.createElement('h1');
+h1.textContent = 'Hello World!';
+h1.style.background = 'blue';
+
+const button = document.createElement('button');
+button.textContent = 'Click me!';
+
+const body = () => {
+  document.body.appendChild(h1);
+  document.body.appendChild(button);
 };
 
-const colorizer = function () {
-  body.style.background = randomColorGenerator();
-  this.style.background = randomColorGenerator();
-  this.style.color = randomColorGenerator();
-};
-
-for (let para of paras) {
-  para.addEventListener('mouseover', colorizer);
-}
-
-for (let btn of buttons) {
-  btn.addEventListener('click', colorizer);
-}
+body();
