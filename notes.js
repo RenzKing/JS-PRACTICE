@@ -1318,18 +1318,22 @@
 // const body = document.querySelector('body');
 // const paras = document.querySelectorAll('p');
 
-// const randomColorGenerator = () => {
-//   const r = Math.floor(Math.random() * 256);
-//   const g = Math.floor(Math.random() * 256);
-//   const b = Math.floor(Math.random() * 256);
-//   return `rgb(${r},${g},${b})`;
-// };
+const randomColorGenerator = () => {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r},${g},${b})`;
+};
 
-// const colorizer = function () {
-//   body.style.background = randomColorGenerator();
-//   this.style.background = randomColorGenerator();
-//   this.style.color = randomColorGenerator();
-// };
+const colorizer = function () {
+  // body.style.background = randomColorGenerator();
+  this.style.background = randomColorGenerator();
+  this.style.color = randomColorGenerator();
+};
+
+const greet = () => {
+  alert('HELLO THERE!');
+};
 
 // for (let para of paras) {
 //   para.addEventListener('mouseover', colorizer);
@@ -1339,16 +1343,34 @@
 //   btn.addEventListener('click', colorizer);
 // }
 
+//  H1  //
 const h1 = document.createElement('h1');
 h1.textContent = 'Hello World!';
 h1.style.background = 'blue';
 
+// BUTTON //
 const button = document.createElement('button');
 button.textContent = 'Click me!';
+button.addEventListener('click', greet);
+button.addEventListener('click', colorizer);
+button.style.width = '50px';
+button.style.height = '50px';
+button.style.marginTop = '50px';
 
+// PARAGRAPH //
+
+const paras = document.createElement('p');
+paras.textContent = 'HELLO JAVASCRIPT';
+paras.style.border = '2px solid black';
+paras.style.marginTop = '20px';
+paras.addEventListener('click', greet);
+paras.addEventListener('mouseover', colorizer);
+
+// BODY FUNCTION //
 const body = () => {
   document.body.appendChild(h1);
   document.body.appendChild(button);
+  document.body.appendChild(paras);
 };
 
 body();
