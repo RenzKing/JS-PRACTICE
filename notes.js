@@ -1411,22 +1411,24 @@ input.addEventListener('keyup', function (e) {
   // console.log(e.type);
 });
 
-window.addEventListener('keydown', function (e) {
-  switch (e.code) {
-    case 'ArrowUp':
-      console.log('Up');
-      break;
-    case 'ArrowDown':
-      console.log('Down');
-      break;
-    case 'ArrowLeft':
-      console.log('Left');
-      break;
-    case 'ArrowRight':
-      console.log('Right');
-      break;
-  }
-});
+// window.addEventListener('keydown', function (e) {
+//   switch (e.code) {
+//     case 'ArrowUp':
+//       console.log('Up');
+//       break;
+//     case 'ArrowDown':
+//       console.log('Down');
+//       break;
+//     case 'ArrowLeft':
+//       console.log('Left');
+//       break;
+//     case 'ArrowRight':
+//       console.log('Right');
+//       break;
+//     default:
+//       console.log('Ignored');
+//   }
+// });
 
 // BODY FUNCTION //
 const body = () => {
