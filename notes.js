@@ -1405,8 +1405,27 @@ btn.style.margin = '30px 30px';
 // INPUT //
 
 const input = document.querySelector('input');
-input.addEventListener('keyup', function () {
-  console.log('KEY DOWN!');
+input.addEventListener('keyup', function (e) {
+  // console.log(e);
+  // console.log(e.code);
+  // console.log(e.type);
+});
+
+window.addEventListener('keydown', function (e) {
+  switch (e.code) {
+    case 'ArrowUp':
+      console.log('Up');
+      break;
+    case 'ArrowDown':
+      console.log('Down');
+      break;
+    case 'ArrowLeft':
+      console.log('Left');
+      break;
+    case 'ArrowRight':
+      console.log('Right');
+      break;
+  }
 });
 
 // BODY FUNCTION //
