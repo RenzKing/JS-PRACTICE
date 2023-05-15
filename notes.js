@@ -1443,3 +1443,12 @@ const body = () => {
 };
 
 body();
+
+// PREVENT DEFAULT = The preventDefault() method of the Event interface tells the ser agent that if the Event does not get explicitly handled, its default action should not be taken as it normally would be.
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  console.log(e);
+});
