@@ -1360,7 +1360,7 @@ button.style.marginTop = '50px';
 // PARAGRAPH //
 
 const p = document.createElement('p');
-const paras = document.querySelector('p');
+// const para = document.querySelector('p');
 p.textContent = 'HELLO JAVASCRIPT';
 p.style.border = '2px solid black';
 p.style.marginTop = '20px';
@@ -1371,7 +1371,7 @@ p.addEventListener('mouseover', colorizer);
 const body = () => {
   document.body.appendChild(h1);
   document.body.appendChild(button);
-  document.body.appendChild(paras);
+  document.body.appendChild(p);
 };
 
 body();
