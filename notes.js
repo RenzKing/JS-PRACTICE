@@ -1398,8 +1398,9 @@ button2.addEventListener('click', function (events) {
 });
 
 // BUTTON 3 //
-// const button3 = document.getElementById('btn');
-// button3.textContent = 'Hello there!';
+const btn = document.getElementById('btn');
+btn.addEventListener('click', colorizer);
+btn.style.margin = '30px 30px';
 
 // BODY FUNCTION //
 const body = () => {
@@ -1410,6 +1411,7 @@ const body = () => {
   document.body.appendChild(p2);
   document.body.appendChild(p3);
   document.body.appendChild(button2);
+  document.body.appendChild(btn);
 };
 
 body();
