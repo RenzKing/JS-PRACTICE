@@ -1405,7 +1405,7 @@ btn.style.margin = '30px 30px';
 // INPUT //
 
 const input = document.querySelector('input');
-input.addEventListener('keydown', function () {
+input.addEventListener('keyup', function () {
   console.log('KEY DOWN!');
 });
 
