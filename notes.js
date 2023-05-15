@@ -1379,9 +1379,27 @@ p1.addEventListener('mouseover', colorizer);
 
 // P2 //
 const p2 = p.cloneNode(true);
-
+p2.textContent = 'Hello React!';
+p2.addEventListener('mouseover', colorizer);
 // P3 //
 const p3 = p.cloneNode(true);
+p3.textContent = 'Hello NODE!';
+p3.addEventListener('mouseover', colorizer);
+
+// BUTTON 2 //
+
+const button2 = document.createElement('button');
+button2.textContent = 'This is button 2!';
+button2.style.margin = '20px';
+button2.style.padding = '20px';
+button2.addEventListener('mouseover', colorizer);
+button2.addEventListener('click', function (events) {
+  console.log(events);
+});
+
+// BUTTON 3 //
+// const button3 = document.getElementById('btn');
+// button3.textContent = 'Hello there!';
 
 // BODY FUNCTION //
 const body = () => {
@@ -1391,6 +1409,7 @@ const body = () => {
   document.body.appendChild(p1);
   document.body.appendChild(p2);
   document.body.appendChild(p3);
+  document.body.appendChild(button2);
 };
 
 body();
