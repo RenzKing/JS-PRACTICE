@@ -1402,6 +1402,13 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click', colorizer);
 btn.style.margin = '30px 30px';
 
+// INPUT //
+
+const input = document.querySelector('input');
+input.addEventListener('keydown', function () {
+  console.log('KEY DOWN!');
+});
+
 // BODY FUNCTION //
 const body = () => {
   document.body.appendChild(h1);
