@@ -1320,96 +1320,96 @@
 
 // RANDOM COLOR GENERATOR //
 
-const randomColorGenerator = () => {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  const a = Math.floor(Math.random() * 10);
-  return `rgb(${r},${g},${b},${a})`;
-};
+// const randomColorGenerator = () => {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   const a = Math.floor(Math.random() * 10);
+//   return `rgb(${r},${g},${b},${a})`;
+// };
 
-// COLORIZER //
+// // COLORIZER //
 
-const colorizer = function () {
-  // body.style.background = randomColorGenerator();
-  this.style.background = randomColorGenerator();
-  this.style.color = randomColorGenerator();
-};
+// const colorizer = function () {
+//   // body.style.background = randomColorGenerator();
+//   this.style.background = randomColorGenerator();
+//   this.style.color = randomColorGenerator();
+// };
 
-const greet = () => {
-  alert('HELLO THERE!');
-};
+// const greet = () => {
+//   alert('HELLO THERE!');
+// };
 
-// for (let para of paras) {
-//   para.addEventListener('mouseover', colorizer);
-// }
+// // for (let para of paras) {
+// //   para.addEventListener('mouseover', colorizer);
+// // }
 
-// for (let btn of buttons) {
-//   btn.addEventListener('click', colorizer);
-// }
+// // for (let btn of buttons) {
+// //   btn.addEventListener('click', colorizer);
+// // }
 
-//  H1  //
-const h1 = document.createElement('h1');
-h1.textContent = 'Hello World!';
-h1.style.background = 'blue';
+// //  H1  //
+// const h1 = document.createElement('h1');
+// h1.textContent = 'Hello World!';
+// h1.style.background = 'blue';
 
-// BUTTON //
-const button = document.createElement('button');
-button.textContent = 'Click me!';
-button.addEventListener('click', greet);
-button.addEventListener('click', colorizer);
-button.style.width = '50px';
-button.style.height = '50px';
-button.style.marginTop = '50px';
+// // BUTTON //
+// const button = document.createElement('button');
+// button.textContent = 'Click me!';
+// button.addEventListener('click', greet);
+// button.addEventListener('click', colorizer);
+// button.style.width = '50px';
+// button.style.height = '50px';
+// button.style.marginTop = '50px';
 
-// PARAGRAPH //
+// // PARAGRAPH //
 
-const p = document.createElement('p');
-// const para = document.querySelector('p');
-p.textContent = 'HELLO JAVASCRIPT';
-p.style.border = '2px solid black';
-p.style.marginTop = '20px';
-p.addEventListener('click', greet);
-p.addEventListener('mouseover', colorizer);
+// const p = document.createElement('p');
+// // const para = document.querySelector('p');
+// p.textContent = 'HELLO JAVASCRIPT';
+// p.style.border = '2px solid black';
+// p.style.marginTop = '20px';
+// p.addEventListener('click', greet);
+// p.addEventListener('mouseover', colorizer);
 
-// P1 //
-const p1 = p.cloneNode(true);
-p1.textContent = 'Hello JS!';
-p1.addEventListener('mouseover', colorizer);
+// // P1 //
+// const p1 = p.cloneNode(true);
+// p1.textContent = 'Hello JS!';
+// p1.addEventListener('mouseover', colorizer);
 
-// P2 //
-const p2 = p.cloneNode(true);
-p2.textContent = 'Hello React!';
-p2.addEventListener('mouseover', colorizer);
-// P3 //
-const p3 = p.cloneNode(true);
-p3.textContent = 'Hello NODE!';
-p3.addEventListener('mouseover', colorizer);
+// // P2 //
+// const p2 = p.cloneNode(true);
+// p2.textContent = 'Hello React!';
+// p2.addEventListener('mouseover', colorizer);
+// // P3 //
+// const p3 = p.cloneNode(true);
+// p3.textContent = 'Hello NODE!';
+// p3.addEventListener('mouseover', colorizer);
 
-// BUTTON 2 //
+// // BUTTON 2 //
 
-const button2 = document.createElement('button');
-button2.textContent = 'This is button 2!';
-button2.style.margin = '20px';
-button2.style.padding = '20px';
-button2.addEventListener('mouseover', colorizer);
-button2.addEventListener('click', function (events) {
-  console.log(events);
-});
+// const button2 = document.createElement('button');
+// button2.textContent = 'This is button 2!';
+// button2.style.margin = '20px';
+// button2.style.padding = '20px';
+// button2.addEventListener('mouseover', colorizer);
+// button2.addEventListener('click', function (events) {
+//   console.log(events);
+// });
 
-// BUTTON 3 //
-const btn = document.getElementById('btn');
-btn.addEventListener('click', colorizer);
-btn.style.margin = '30px 30px';
+// // BUTTON 3 //
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click', colorizer);
+// btn.style.margin = '30px 30px';
 
 // INPUT //
 
-const input = document.querySelector('input');
-input.addEventListener('keyup', function (e) {
-  // console.log(e);
-  // console.log(e.code);
-  // console.log(e.type);
-});
+// const input = document.querySelector('input');
+// input.addEventListener('keyup', function (e) {
+//   // console.log(e);
+//   // console.log(e.code);
+//   // console.log(e.type);
+// });
 
 // window.addEventListener('keydown', function (e) {
 //   switch (e.code) {
@@ -1430,25 +1430,31 @@ input.addEventListener('keyup', function (e) {
 //   }
 // });
 
-// BODY FUNCTION //
-const body = () => {
-  document.body.appendChild(h1);
-  document.body.appendChild(button);
-  document.body.appendChild(p);
-  document.body.appendChild(p1);
-  document.body.appendChild(p2);
-  document.body.appendChild(p3);
-  document.body.appendChild(button2);
-  document.body.appendChild(btn);
-};
+// // BODY FUNCTION //
+// const body = () => {
+//   document.body.appendChild(h1);
+//   document.body.appendChild(button);
+//   document.body.appendChild(p);
+//   document.body.appendChild(p1);
+//   document.body.appendChild(p2);
+//   document.body.appendChild(p3);
+//   document.body.appendChild(button2);
+//   document.body.appendChild(btn);
+// };
 
-body();
+// body();
 
 // PREVENT DEFAULT = The preventDefault() method of the Event interface tells the ser agent that if the Event does not get explicitly handled, its default action should not be taken as it normally would be.
 
-const form = document.querySelector('form');
+const form = document.querySelector('#testform');
+const input = document.querySelector('input');
+const list = document.querySelector('#list');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  console.log(e);
+  const userInput = input.value;
+  const newLI = document.createElement('li');
+  newLI.innerText = userInput;
+  list.append(newLI);
+  input.value = '';
 });
