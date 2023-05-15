@@ -1318,12 +1318,17 @@
 // const body = document.querySelector('body');
 // const paras = document.querySelectorAll('p');
 
+// RANDOM COLOR GENERATOR //
+
 const randomColorGenerator = () => {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
-  return `rgb(${r},${g},${b})`;
+  const a = Math.floor(Math.random() * 10);
+  return `rgb(${r},${g},${b},${a})`;
 };
+
+// COLORIZER //
 
 const colorizer = function () {
   // body.style.background = randomColorGenerator();
@@ -1367,11 +1372,25 @@ p.style.marginTop = '20px';
 p.addEventListener('click', greet);
 p.addEventListener('mouseover', colorizer);
 
+// P1 //
+const p1 = p.cloneNode(true);
+p1.textContent = 'Hello JS!';
+p1.addEventListener('mouseover', colorizer);
+
+// P2 //
+const p2 = p.cloneNode(true);
+
+// P3 //
+const p3 = p.cloneNode(true);
+
 // BODY FUNCTION //
 const body = () => {
   document.body.appendChild(h1);
   document.body.appendChild(button);
   document.body.appendChild(p);
+  document.body.appendChild(p1);
+  document.body.appendChild(p2);
+  document.body.appendChild(p3);
 };
 
 body();
