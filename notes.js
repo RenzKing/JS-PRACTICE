@@ -1519,10 +1519,12 @@ const rgb = () => {
 const colorizer = function () {
   const body = document.querySelector('body');
   body.style.background = rgb();
+  h1.textContent = rgb();
   console.log(rgb());
 };
 
 const h1 = document.querySelector('h1');
+h1.textContent = rgb();
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', colorizer);
