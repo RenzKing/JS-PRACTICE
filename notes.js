@@ -1446,15 +1446,29 @@
 
 // PREVENT DEFAULT = The preventDefault() method of the Event interface tells the ser agent that if the Event does not get explicitly handled, its default action should not be taken as it normally would be.
 
-const form = document.querySelector('#testform');
-const input = document.querySelector('input');
-const list = document.querySelector('#list');
+// const form = document.querySelector('#testform');
+// const input = document.querySelector('input');
+// const list = document.querySelector('#list');
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  const userInput = input.value;
-  const newLI = document.createElement('li');
-  newLI.innerText = userInput;
-  list.append(newLI);
-  input.value = '';
-});
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   const userInput = input.value;
+//   const newLI = document.createElement('li');
+//   newLI.innerText = userInput;
+//   list.append(newLI);
+//   input.value = '';
+// });
+
+const display = function () {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `${r},${g},${b}`;
+};
+
+display();
+
+const h1 = document.querySelector('h1');
+h1.textContent = display();
+
+const btn = document.querySelector('button');
