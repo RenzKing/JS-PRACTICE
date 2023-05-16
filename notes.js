@@ -1324,16 +1324,16 @@
 //   const r = Math.floor(Math.random() * 256);
 //   const g = Math.floor(Math.random() * 256);
 //   const b = Math.floor(Math.random() * 256);
-//   const a = Math.floor(Math.random() * 10);
-//   return `rgb(${r},${g},${b},${a})`;
+//   return `rgb(${r},${g},${b})`;
 // };
 
 // // COLORIZER //
 
 // const colorizer = function () {
 //   // body.style.background = randomColorGenerator();
-//   this.style.background = randomColorGenerator();
-//   this.style.color = randomColorGenerator();
+//   const body = document.querySelector('body');
+//   body.style.background = randomColorGenerator();
+//   // this.style.color = randomColorGenerator();
 // };
 
 // const greet = () => {
@@ -1459,16 +1459,70 @@
 //   input.value = '';
 // });
 
-const display = function () {
+// const rgb = () => {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `R ${r},G ${g},B ${b}`;
+// };
+
+// const colorizer = function () {
+//   const body = document.querySelector('body');
+//   body.style.background = rgb();
+// };
+
+// COLORIZER; //
+
+// const colorizer = function () {
+//   // body.style.background = randomColorGenerator();
+//   const body = document.querySelector('body');
+//   body.style.background = randomColorGenerator();
+//   // this.style.color = randomColorGenerator();
+// };
+
+// const h1 = document.querySelector('h1');
+// h1.textContent = randomColorGenerator();
+
+// const btn = document.querySelector('button');
+// btn.addEventListener('click', colorizer);
+
+// const body = function () {
+//   document.body.appendChild('h1');
+//   document.body.appendChild('button');
+// };
+
+// body();
+
+// // A //
+// const randomColorGenerator = () => {
+//   const r = Math.floor(Math.random() * 256);
+//   const g = Math.floor(Math.random() * 256);
+//   const b = Math.floor(Math.random() * 256);
+//   return `rgb(${r},${g},${b})`;
+// };
+
+// B //
+const rgb = () => {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
-  return `${r},${g},${b}`;
+  return `rgb(${r},${g},${b})`;
 };
 
-display();
+// // A //
+// const colorizer = function () {
+//   const body = document.querySelector('body');
+//   body.style.background = randomColorGenerator();
+// };
 
-const h1 = document.querySelector('h1');
-h1.textContent = display();
+// B //
+const colorizer = function () {
+  const body = document.querySelector('body');
+  body.style.background = rgb();
+};
 
 const btn = document.querySelector('button');
+btn.addEventListener('click', colorizer);
+const h1 = document.querySelector('h1');
+h1.textContent = rgb();
+btn.addEventListener('click', h1);
