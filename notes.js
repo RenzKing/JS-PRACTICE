@@ -1503,9 +1503,9 @@
 
 // B //
 const rgb = () => {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
   return `rgb(${r},${g},${b})`;
 };
 
@@ -1519,10 +1519,10 @@ const rgb = () => {
 const colorizer = function () {
   const body = document.querySelector('body');
   body.style.background = rgb();
+  console.log(rgb());
 };
+
+const h1 = document.querySelector('h1');
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', colorizer);
-const h1 = document.querySelector('h1');
-h1.textContent = rgb();
-btn.addEventListener('click', h1);
