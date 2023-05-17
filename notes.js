@@ -1626,22 +1626,38 @@
 
 // EVENT DELEGATION = Javascript event delegation is a simple techinique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
 
-const lis = document.querySelectorAll('li');
-for (let li of lis) {
-  li.addEventListener('click', () => {
-    li.remove();
-  });
-}
+// const lis = document.querySelectorAll('li');
+const tweetForm = document.querySelector('#tweetForm');
+const tweetsContainer = document.querySelector('#tweets');
 
-const tweetForm = querySelector('#tweetForm');
-const tweetContainer = querySelector('#tweets');
+// DELETE LI WHEN CLICKED //
+// for (let li of lis) {
+//   li.addEventListener('click', function () {
+//     li.remove();
+//   });
+// }
 
+// Function to add the input to the tweets list //
+const addTweet = (username, tweet) => {
+  const newTweet = document.createElement('li');
+  const strongTag = document.createElement('strong');
+  strongTag.append(username);
+  newTweet.append(strongTag);
+  newTweet.append(`- ${tweet}`);
+  tweetsContainer.append(newTweet);
+};
+
+// FETCH INPUTS FROM THE FORM //
 tweetForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  const userInput = document.querySelector('#username');
-  const userTweet = document.querySelector('#tweet');
-  const newLi = document.querySelector('#tweets');
-  newLi.innerText = `${userInput.value}${userTweet.value}`;
-  tweetContainer.append(newLi);
-  form.reset();
+  const usernameInput = tweetForm.elements.username;
+  const tweetInput = tweetForm.elements.tweet;
+  addTweet(usernameInput.value, tweetInput.value);
+  tweetForm.reset();
+});
+
+// DELETER //
+
+tweetsContainer.addEventListener('click', function (e) {
+  e.target.nodeName === 'LI' && e.target.remove();
 });
