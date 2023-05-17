@@ -1567,8 +1567,15 @@ const button = document.querySelector('button');
 
 const preventDefault = (test)=>{
 test.preventDefault();
+const userInput2 = textInput.value;
+const userInput = numberInput.value;
+const list = document.createElement("li")
+textInput.append(userInput2)
+numberInput.append(userInput)
+textInput.value = "";
+numberInput.valut = "";
 }
 
 
-const formFunc = form.addEventListener("suubmit",)
+const formFunc = form.addEventListener("submit", preventDefault())
 
