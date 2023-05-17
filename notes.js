@@ -1562,6 +1562,24 @@
 //   input.value = '';
 // });
 
+// const h1 = document.querySelector('h1');
+// const btn = document.createElement('button');
+// btn.innerText = 'Click me';
+
+// const rgb = () => {
+//   const r = Math.floor(Math.random() * 255);
+//   const g = Math.floor(Math.random() * 255);
+//   const b = Math.floor(Math.random() * 255);
+//   return `rgb(${r},${g},${b})`;
+// };
+
+// btn.addEventListener('click', () => {
+//   document.body.style.background = rgb();
+//   h1.innerText = rgb();
+// });
+
+// document.body.append(btn);
+
 // EXERCISE #2 //
 
 //Write a program that will ask the user for a product and quantity inputs. Then, list those inputs into an unordered list.The textboxes should be blanked once the input is submitted.Your program must have the following:
@@ -1589,20 +1607,3 @@
 // });
 
 // EVENT DELEGATION = Javascript event delegation is a simple techinique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
-const h1 = document.querySelector('h1');
-const btn = document.createElement('button');
-btn.innerText = 'Click me';
-
-const rgb = () => {
-  const r = Math.floor(Math.random() * 255);
-  const g = Math.floor(Math.random() * 255);
-  const b = Math.floor(Math.random() * 255);
-  return `rgb(${r},${g},${b})`;
-};
-
-btn.addEventListener('click', () => {
-  document.body.style.background = rgb();
-  h1.innerText = rgb();
-});
-
-document.body.append(btn);
