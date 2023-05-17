@@ -1614,12 +1614,14 @@ const list = document.querySelector('ul');
 const prod = document.querySelector('#prod');
 const qty = document.querySelector('#qty');
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  const pv = prod.value;
-  const qv = qty.value;
+const total = event => {
+  event.preventDefault();
+  prod.value;
+  qty.value;
   const newLi = document.createElement('li');
-  newLi.innterText = `${qty} - ${pv}`;
+  newLi.textContent = `${qty.value} - ${prod.value}`;
   list.append(newLi);
   form.reset();
-});
+};
+
+form.addEventListener('submit', total);
