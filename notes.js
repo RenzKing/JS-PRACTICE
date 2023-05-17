@@ -1502,6 +1502,12 @@
 // };
 
 // EXERCISE #1 //
+
+// 1.write a program that will change the background of a page when the button is clicked.Your program must have the following:
+
+// -h1 to display the current rgb() value of the background
+// -button to click and it should change the background color when it is clicked.
+
 // const rgb = () => {
 //   const r = Math.floor(Math.random() * 255);
 //   const g = Math.floor(Math.random() * 255);
@@ -1556,19 +1562,28 @@
 //   input.value = '';
 // });
 
-const form = document.querySelector('form');
-const prod = document.querySelector('#prod');
-const qty = document.querySelector('#qty');
-const btn = document.querySelector('#btn');
-const list = document.querySelector('#list');
+// EXERCISE #2 //
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  const pv = prod.value;
-  const qv = qty.value;
-  const newLi = document.createElement('li');
-  newLi.innerText = `${qv} - ${pv}`;
-  list.append(newLi);
-  prod.value = '';
-  qty.value = '';
-});
+//Write a program that will ask the user for a product and quantity inputs. Then, list those inputs into an unordered list.The textboxes should be blanked once the input is submitted.Your program must have the following:
+
+// -form with two inputs
+// -Button to submit once the uuser is done with the input
+// -output like below:
+// 3 - eggs
+
+// const form = document.querySelector('form');
+// const prod = document.querySelector('#prod');
+// const qty = document.querySelector('#qty');
+// const btn = document.querySelector('#btn');
+// const list = document.querySelector('#list');
+
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault(); // To prevent default
+//   const pv = prod.value; //To fetch what is typed in the input box
+//   const qv = qty.value; //To fetch what is typed in the input box
+//   const newLi = document.createElement('li'); //To create new list element
+//   newLi.innerText = `${qv} - ${pv}`; //To add text equivalent to the value of the variables written
+//   list.append(newLi); // To add the li created li element to the list variable or ul element
+//   prod.value = ''; //To empty input after submit
+//   qty.value = ''; //To empty input  after submit
+// });
