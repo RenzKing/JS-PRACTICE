@@ -1541,41 +1541,34 @@
 //   h1.textContent = rgb();
 // });
 
+// PREVENT DEFAULT = The preventDefault() method of the Event interface tells the ser agent that if the Event does not get explicitly handled, its default action should not be taken as it normally would be.
 
+// const form = document.querySelector('#testform');
+// const input = document.querySelector('input');
+// const list = document.querySelector('#list');
 
-PREVENT DEFAULT = The preventDefault() method of the Event interface tells the ser agent that if the Event does not get explicitly handled, its default action should not be taken as it normally would be.
+// form.addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   const userInput = input.value;
+//   const newLI = document.createElement('li');
+//   newLI.innerText = userInput;
+//   list.append(newLI);
+//   input.value = '';
+// });
 
-const form = document.querySelector('#testform');
-const input = document.querySelector('input');
+const form = document.querySelector('form');
+const prod = document.querySelector('#prod');
+const qty = document.querySelector('#qty');
+const btn = document.querySelector('#btn');
 const list = document.querySelector('#list');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  const userInput = input.value;
-  const newLI = document.createElement('li');
-  newLI.innerText = userInput;
-  list.append(newLI);
-  input.value = '';
+  const pv = prod.value;
+  const qv = qty.value;
+  const newLi = document.createElement('li');
+  newLi.innerText = `${qv} - ${pv}`;
+  list.append(newLi);
+  prod.value = '';
+  qty.value = '';
 });
-
-
-
-const form = document.querySelector('form');
-const textInput = document.querySelector('#textInput');
-const numberInput = document.querySelector('#numberInput');
-const button = document.querySelector('button');
-
-const preventDefault = (test)=>{
-test.preventDefault();
-const userInput2 = textInput.value;
-const userInput = numberInput.value;
-const list = document.createElement("li")
-textInput.append(userInput2)
-numberInput.append(userInput)
-textInput.value = "";
-numberInput.valut = "";
-}
-
-
-const formFunc = form.addEventListener("submit", preventDefault())
-
