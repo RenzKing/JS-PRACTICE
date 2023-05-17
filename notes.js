@@ -1521,19 +1521,54 @@
 // const btn = document.querySelector('button');
 // btn.addEventListener('click', colorizer);
 
-const h1 = document.querySelector('h1');
+// const h1 = document.querySelector('h1');
+// const button = document.querySelector('button');
+
+// const rgb = () => {
+//   const r = Math.trunc(Math.random() * 255);
+//   const g = Math.trunc(Math.random() * 255);
+//   const b = Math.trunc(Math.random() * 255);
+//   return `rgb(${r},${g},${b})`;
+// };
+
+// const colorizer = () => {
+//   document.body.style.background = rgb();
+//   h1.textContent = rgb();
+// };
+
+// button.addEventListener('click', () => {
+//   document.body.style.background = rgb();
+//   h1.textContent = rgb();
+// });
+
+
+
+PREVENT DEFAULT = The preventDefault() method of the Event interface tells the ser agent that if the Event does not get explicitly handled, its default action should not be taken as it normally would be.
+
+const form = document.querySelector('#testform');
+const input = document.querySelector('input');
+const list = document.querySelector('#list');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const userInput = input.value;
+  const newLI = document.createElement('li');
+  newLI.innerText = userInput;
+  list.append(newLI);
+  input.value = '';
+});
+
+
+
+const form = document.querySelector('form');
+const textInput = document.querySelector('#textInput');
+const numberInput = document.querySelector('#numberInput');
 const button = document.querySelector('button');
 
-const rgb = () => {
-  const r = Math.floor(Math.random() * 255);
-  const g = Math.floor(Math.random() * 255);
-  const b = Math.floor(Math.random() * 255);
-  return `rgb(${r},${g},${b})`;
-};
+const preventDefault = (test)=>{
+test.preventDefault();
+}
 
-const colorizer = () => {
-  document.body.style.background = rgb();
-  h1.textContent = rgb();
-};
 
-button.addEventListener('click', colorizer);
+const formFunc = form.addEventListener("suubmit",)
+
