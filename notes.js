@@ -1587,3 +1587,5 @@
 //   prod.value = ''; //To empty input after submit
 //   qty.value = ''; //To empty input  after submit
 // });
+
+// EVENT DELEGATION = Javascript event delegation is a simple techinique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
