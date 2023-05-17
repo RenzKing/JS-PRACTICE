@@ -1606,22 +1606,22 @@
 //   qty.value = ''; //To empty input  after submit
 // });
 
+// const form = document.querySelector('form');
+// const btn = document.querySelector('button');
+// const list = document.querySelector('ul');
+// const prod = document.querySelector('#prod');
+// const qty = document.querySelector('#qty');
+
+// const total = event => {
+//   event.preventDefault();
+//   prod.value;
+//   qty.value;
+//   const newLi = document.createElement('li');
+//   newLi.textContent = `${qty.value} - ${prod.value}`;
+//   list.append(newLi);
+//   form.reset();
+// };
+
+// form.addEventListener('submit', total);
+
 // EVENT DELEGATION = Javascript event delegation is a simple techinique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
-
-const form = document.querySelector('form');
-const btn = document.querySelector('button');
-const list = document.querySelector('ul');
-const prod = document.querySelector('#prod');
-const qty = document.querySelector('#qty');
-
-const total = event => {
-  event.preventDefault();
-  prod.value;
-  qty.value;
-  const newLi = document.createElement('li');
-  newLi.textContent = `${qty.value} - ${prod.value}`;
-  list.append(newLi);
-  form.reset();
-};
-
-form.addEventListener('submit', total);
