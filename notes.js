@@ -1625,3 +1625,16 @@
 // form.addEventListener('submit', total);
 
 // EVENT DELEGATION = Javascript event delegation is a simple techinique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
+
+const lis = document.querySelectorAll('li');
+
+const remover = () => {
+  for (let li of lis) {
+    li.addEventListener('click', () => {
+      li.remove();
+    });
+  }
+};
+
+const remove = document.querySelector('#tweets');
+remove.addEventListener('click', remover);
