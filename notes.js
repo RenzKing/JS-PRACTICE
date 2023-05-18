@@ -1668,3 +1668,19 @@ const tweetsContainer = document.querySelector('#tweets');
 // -When a script calls a function, the interpreter adds it ot the call stack and then starts carrying out the function.
 // Any function that are called by that function are added to the call stack further up, and run where their call are reached.
 // When the current function is finished, the interpreter takes it off the stack and resumes execution where it left of in the last code listing.
+
+const multiply = (x, y) => x * y;
+const square = x => multiply(x, x);
+const isRightTriangle = (a, b, c) => square(a) + square(b) === square(c);
+
+console.log(isRightTriangle(3, 4, 5));
+
+multiply: 3,3 = 9
+multiply: 4,4 = 16
+Sum = 25
+multiply: 5,5 = 25
+square(3)=9
+square(4)=16
+square(5)=25
+
+=TRUE
