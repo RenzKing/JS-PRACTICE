@@ -1661,3 +1661,5 @@ tweetForm.addEventListener('submit', function (e) {
 tweetsContainer.addEventListener('click', function (e) {
   e.target.nodeName === 'LI' && e.target.remove();
 });
+
+// CALL STACK //
