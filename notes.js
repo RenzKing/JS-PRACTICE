@@ -1690,21 +1690,28 @@ const tweetsContainer = document.querySelector('#tweets');
 // The Js call stack recognizes the Web API functions and passes them off to the brower to take care of.
 // Once the browser finishes those tasks, they return and are pushed onto the stack as a callback.
 
-setTimeout(() => {
-  document.body.style.background = 'red';
+//  SET TIMEOUT NESTING //
+const bg = () => {
   setTimeout(() => {
-    document.body.style.background = 'green';
+    document.body.style.background = 'red';
     setTimeout(() => {
-      document.body.style.background = 'yellow';
+      document.body.style.background = 'green';
       setTimeout(() => {
-        document.body.style.background = 'blue';
+        document.body.style.background = 'yellow';
         setTimeout(() => {
-          document.body.style.background = 'black';
+          document.body.style.background = 'blue';
           setTimeout(() => {
-            document.body.style.background = 'white';
+            document.body.style.background = 'black';
+            setTimeout(() => {
+              document.body.style.background = 'white';
+            }, 1000);
           }, 1000);
         }, 1000);
       }, 1000);
     }, 1000);
   }, 1000);
-}, 1000);
+};
+
+bg();
+
+const transition = (document.body.style.transition = '1s background-color');
