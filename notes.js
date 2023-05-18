@@ -1683,3 +1683,15 @@ const tweetsContainer = document.querySelector('#tweets');
 // square(4)=16
 // square(5)=25
 // =TRUE
+
+// JS SINGLE THREADED //
+// Runs code one at a time.
+// Browsers come with Web APIs that are able to handle certain tasks in the background(like making requests of setTimeout).
+// The Js call stack recognizes the Web API functions and passes them off to the brower to take care of.
+// Once the browser finishes those tasks, they return and are pushed onto the stack as a callback.
+
+document.body.style.background = 'green';
+
+const timer = setTimeout(() => {
+  document.body.style.background = 'red';
+}, 2000);
