@@ -1690,8 +1690,21 @@ const tweetsContainer = document.querySelector('#tweets');
 // The Js call stack recognizes the Web API functions and passes them off to the brower to take care of.
 // Once the browser finishes those tasks, they return and are pushed onto the stack as a callback.
 
-document.body.style.background = 'green';
-
-const timer = setTimeout(() => {
+setTimeout(() => {
   document.body.style.background = 'red';
-}, 2000);
+  setTimeout(() => {
+    document.body.style.background = 'green';
+    setTimeout(() => {
+      document.body.style.background = 'yellow';
+      setTimeout(() => {
+        document.body.style.background = 'blue';
+        setTimeout(() => {
+          document.body.style.background = 'black';
+          setTimeout(() => {
+            document.body.style.background = 'white';
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 1000);
+}, 1000);
