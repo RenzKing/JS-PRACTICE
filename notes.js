@@ -1638,28 +1638,33 @@ const tweetsContainer = document.querySelector('#tweets');
 // }
 
 // Function to add the input to the tweets list //
-const addTweet = (username, tweet) => {
-  const newTweet = document.createElement('li');
-  const strongTag = document.createElement('strong');
-  strongTag.append(username);
-  newTweet.append(strongTag);
-  newTweet.append(`- ${tweet}`);
-  tweetsContainer.append(newTweet);
-};
+// const addTweet = (username, tweet) => {
+//   const newTweet = document.createElement('li');
+//   const strongTag = document.createElement('strong');
+//   strongTag.append(username);
+//   newTweet.append(strongTag);
+//   newTweet.append(`- ${tweet}`);
+//   tweetsContainer.append(newTweet);
+// };
 
-// FETCH INPUTS FROM THE FORM //
-tweetForm.addEventListener('submit', function (e) {
-  e.preventDefault();
-  const usernameInput = tweetForm.elements.username;
-  const tweetInput = tweetForm.elements.tweet;
-  addTweet(usernameInput.value, tweetInput.value);
-  tweetForm.reset();
-});
+// // FETCH INPUTS FROM THE FORM //
+// tweetForm.addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   const usernameInput = tweetForm.elements.username;
+//   const tweetInput = tweetForm.elements.tweet;
+//   addTweet(usernameInput.value, tweetInput.value);
+//   tweetForm.reset();
+// });
 
-// DELETER //
+// // DELETER //
 
-tweetsContainer.addEventListener('click', function (e) {
-  e.target.nodeName === 'LI' && e.target.remove();
-});
+// tweetsContainer.addEventListener('click', function (e) {
+//   e.target.nodeName === 'LI' && e.target.remove();
+// });
 
-// CALL STACK //
+// CALL STACK = The call stack is a mechanism for an interpreter (like the Javascript interpreter ina web browser) to keep track of its place in a script that calls multiple functions - what function is currently being run and what functions are called from within that function, etc.//
+
+// How it works?
+// -When a script calls a function, the interpreter adds it ot the call stack and then starts carrying out the function.
+// Any function that are called by that function are added to the call stack further up, and run where their call are reached.
+// When the current function is finished, the interpreter takes it off the stack and resumes execution where it left of in the last code listing.
