@@ -1691,27 +1691,36 @@ const tweetsContainer = document.querySelector('#tweets');
 // Once the browser finishes those tasks, they return and are pushed onto the stack as a callback.
 
 //  SET TIMEOUT NESTING //
-const bg = () => {
+// const bg = () => {
+//   setTimeout(() => {
+//     document.body.style.background = 'red';
+//     setTimeout(() => {
+//       document.body.style.background = 'green';
+//       setTimeout(() => {
+//         document.body.style.background = 'yellow';
+//         setTimeout(() => {
+//           document.body.style.background = 'blue';
+//           setTimeout(() => {
+//             document.body.style.background = 'black';
+//             setTimeout(() => {
+//               document.body.style.background = 'white';
+//             }, 1000);
+//           }, 1000);
+//         }, 1000);
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// };
+
+// bg();
+
+// const transition = (document.body.style.transition = '1s background-color');
+
+const delayedColorChange = (newColor, delay) => {
   setTimeout(() => {
-    document.body.style.background = 'red';
-    setTimeout(() => {
-      document.body.style.background = 'green';
-      setTimeout(() => {
-        document.body.style.background = 'yellow';
-        setTimeout(() => {
-          document.body.style.background = 'blue';
-          setTimeout(() => {
-            document.body.style.background = 'black';
-            setTimeout(() => {
-              document.body.style.background = 'white';
-            }, 1000);
-          }, 1000);
-        }, 1000);
-      }, 1000);
-    }, 1000);
-  }, 1000);
+    document.body.style.background = newColor;
+  }, delay);
 };
 
-bg();
-
-const transition = (document.body.style.transition = '1s background-color');
+delayedColorChange('red', 2000);
+delayedColorChange('green', 3000);
