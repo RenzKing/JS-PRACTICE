@@ -1764,6 +1764,8 @@ const tweetsContainer = document.querySelector('#tweets');
 // FAKE REQUEST FUNCTION //
 const fakeRequestCallback = (url, success, failure) => {
   const delay = Math.floor(Math.random() * 4500) + 500;
+  console.log(delay);
+
   setTimeout(() => {
     if (delay > 4000) {
       failure(`Connection Timeout`);
@@ -1776,11 +1778,23 @@ const fakeRequestCallback = (url, success, failure) => {
 // FAKE REQUEST RUN //
 
 fakeRequestCallback(
-  'books.com',
-  function () {
+  'books.com/1',
+  function (response) {
     console.log('It worked!');
+    console.log(response);
+
+    fakeRequestCallback('books.com/2', function (response) {
+      console.log('It worked!');
+      console.log(response),
+        function (response) {
+          console.log('Error');
+          console.log(response);
+        };
+    });
   },
-  function () {
+
+  function (response) {
     console.log('Error');
+    console.log(response);
   }
 );
