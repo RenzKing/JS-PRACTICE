@@ -1806,6 +1806,7 @@ const tweetsContainer = document.querySelector('#tweets');
 const fakeRequestPromise = url => {
   return new Promise((fulfilled, failed) => {
     const delay = Math.floor(Math.random() * 4500) + 500;
+    console.log(delay);
     setTimeout(() => {
       if (delay > 4000) {
         failed(`Connection Timeout`);
@@ -1816,10 +1817,36 @@ const fakeRequestPromise = url => {
   });
 };
 
-const request = fakeRequestPromise('google.com/api/map');
+// const request = fakeRequestPromise('google.com/api/map');
 
-request
-  .then(function () {
-    console.log('worked');
-  })
-  .catch(() => console.log('Error'));
+// request
+//   .then(function () {
+//     console.log('worked');
+
+//     fakeRequestPromise('google.com/api/map2').then(() =>
+//       console.log('Worked again!')
+//     );
+//   })
+//   .catch(() => console.log('Error'));
+
+// fakeRequestPromise('abc.com')
+//   .then(data => {
+//     console.log(data);
+//     return fakeRequestPromise('aaa.com');
+//   })
+//   .then(data => {
+//     console.log(data);
+//     return fakeRequestPromise('bbb.com');
+//   })
+//   .then(data => {
+//     console.log(data);
+//     return fakeRequestPromise('ccc.com');
+//   })
+//   .catch(data => {
+//     console.log(data);
+//   });
+
+
+new Promise((fulfilled,failed) {
+
+})
