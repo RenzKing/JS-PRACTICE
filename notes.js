@@ -1739,14 +1739,24 @@ const tweetsContainer = document.querySelector('#tweets');
 //   });
 // });
 
-searchMoviesAPI(
-  'Bat',
-  () => {
-    saveToDB(movies, () => {
-      // If it works, run this
-    });
-  },
-  () => {
-    // If API is down, or request failed
-  }
-);
+// searchMoviesAPI(
+//   'Bat',
+//   () => {
+//     saveToDB(
+//       movies,
+//       () => {
+//         // If it works, run this
+//       },
+
+//       () => {
+//         // If it doesn't work run this
+//       }
+//     );
+//   },
+
+//   () => {
+//     // If API is down, or request failed
+//   }
+// );
+
+// PROMISES = A promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronus action's eventual success value or failure reason .//
