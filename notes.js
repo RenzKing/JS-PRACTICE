@@ -1714,28 +1714,29 @@ const tweetsContainer = document.querySelector('#tweets');
 
 // bg();
 
-const transition = (document.body.style.transition = '1s background-color');
+// const transition = (document.body.style.transition = '1s background-color');
 
-const delayedColorChange = (newColor, delay, doNext) => {
-  setTimeout(() => {
-    document.body.style.background = newColor;
-    doNext();
-  }, delay);
-};
+// const delayedColorChange = (newColor, delay, doNext) => {
+//   setTimeout(() => {
+//     document.body.style.background = newColor;
+//     doNext();
+//   }, delay);
+// };
 
-delayedColorChange('yellow', 1000, () => {
-  delayedColorChange('red', 1000, () => {
-    delayedColorChange('blue', 1000, () => {
-      delayedColorChange('brown', 1000, () => {
-        delayedColorChange('teal', 1000, () => {
-          delayedColorChange('magenta', 1000, () => {
-            delayedColorChange('white', 1000, () => {
-              delayedColorChange('black', 1000);
-            });
-          });
-        });
-      });
-    });
-  });
-});
+// delayedColorChange('yellow', 1000, () => {
+//   delayedColorChange('red', 1000, () => {
+//     delayedColorChange('blue', 1000, () => {
+//       delayedColorChange('brown', 1000, () => {
+//         delayedColorChange('teal', 1000, () => {
+//           delayedColorChange('magenta', 1000, () => {
+//             delayedColorChange('white', 1000, () => {
+//               delayedColorChange('black', 1000);
+//             });
+//           });
+//         });
+//       });
+//     });
+//   });
+// });
 
+document.body.style.background ="blue"
