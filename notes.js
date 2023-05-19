@@ -1846,7 +1846,42 @@ const fakeRequestPromise = url => {
 //     console.log(data);
 //   });
 
+// const fakeRequest = url => {
+//   return new Promise((fulfilled, reject) => {
+//     const rand = Math.random();
+//     console.log(rand);
+//     setTimeout(() => {
+//       if (rand < 0.7) {
+//         fulfilled('fullfilleddddddd');
+//       }
+//       reject('Requestt Error!');
+//     }, 1000);
+//   });
+// };
 
-new Promise((fulfilled,failed) {
+// fakeRequest('test')
+//   .then(data => {
+//     console.log('Done with the request');
+//     console.log(data, 'test data.');
+//   })
+//   .catch(err => {
+//     console.log('Errorrrrr');
+//     console.log(err);
+//   });
 
-})
+const delayedColorChange = (newColor, delay) => {
+  return new Promise((fulfill, reject) => {
+    setTimeout(() => {
+      document.body.style.background = newColor;
+      document.body.style.transition = '1s';
+      fulfill();
+    }, delay);
+  });
+};
+
+delayedColorChange('blue', 1000)
+  .then(() => delayedColorChange('yellow', 1000))
+  .then(() => delayedColorChange('magenta', 1000))
+  .then(() => delayedColorChange('black', 1000))
+  .then(() => delayedColorChange('red', 1000))
+  .then(() => delayedColorChange('white', 1000));
