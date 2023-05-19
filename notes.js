@@ -1885,3 +1885,4 @@ delayedColorChange('blue', 1000)
   .then(() => delayedColorChange('black', 1000))
   .then(() => delayedColorChange('red', 1000))
   .then(() => delayedColorChange('white', 1000));
+``;
