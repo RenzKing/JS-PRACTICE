@@ -1760,3 +1760,27 @@ const tweetsContainer = document.querySelector('#tweets');
 // );
 
 // PROMISES = A promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate handlers with an asynchronus action's eventual success value or failure reason .//
+
+// FAKE REQUEST FUNCTION //
+const fakeRequestCallback = (url, success, failure) => {
+  const delay = Math.floor(Math.random() * 4500) + 500;
+  setTimeout(() => {
+    if (delay > 4000) {
+      failure(`Connection Timeout`);
+    } else {
+      success(`Here is your fake data from ${url}`);
+    }
+  }, delay);
+};
+
+// FAKE REQUEST RUN //
+
+fakeRequestCallback(
+  'books.com',
+  function () {
+    console.log('It worked!');
+  },
+  function () {
+    console.log('Error');
+  }
+);
