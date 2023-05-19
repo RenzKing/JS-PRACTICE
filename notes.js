@@ -1770,3 +1770,19 @@ delayedColorChange('yellow', 1000, () => {
     });
   });
 });
+
+delayedColorChange('yellow', 1000, () => {
+  delayedColorChange('red', 1000, () => {
+    delayedColorChange('blue', 1000, () => {
+      delayedColorChange('brown', 1000, () => {
+        delayedColorChange('teal', 1000, () => {
+          delayedColorChange('magenta', 1000, () => {
+            delayedColorChange('white', 1000, () => {
+              delayedColorChange('black', 1000);
+            });
+          });
+        });
+      });
+    });
+  });
+});
