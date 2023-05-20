@@ -1947,13 +1947,40 @@ const delayedColorChanger = (color, delay) => {
 //   .then(() => delayedColorChanger('black', 1000))
 //   .then(() => delayedColorChanger('white', 1000));
 
-const rainbow = async () => {
-  await delayedColorChanger('red', 1000);
-  await delayedColorChanger('orange', 1000);
-  await delayedColorChanger('blue', 1000);
-  await delayedColorChanger('yellow', 1000);
-  await delayedColorChanger('green', 1000);
-  await delayedColorChanger('white', 1000);
+// const rainbow = async () => {
+//   await delayedColorChanger('red', 1000);
+//   await delayedColorChanger('orange', 1000);
+//   await delayedColorChanger('blue', 1000);
+//   await delayedColorChanger('yellow', 1000);
+//   await delayedColorChanger('green', 1000);
+//   await delayedColorChanger('white', 1000);
+// };
+
+// const printRainbow = async () => {
+//   await rainbow();
+//   console.log('end of the rainbow');
+// };
+
+// printRainbow();
+
+const fakeRequest = url => {
+  return new Promise((resolve, reject) => {
+    const rand = Math.random();
+    console.log(rand);
+    setTimeout(() => {
+      if (rand < 0.7) {
+        resolve(`Here is your fake data from ${url}`);
+      }
+      reject(`Request rejected`);
+    }, 1000);
+  });
 };
 
-rainbow();
+fakeRequest('www.abc')
+  .then(() => {
+    console.log('Test 1');
+  })
+  .catch(() => {
+    console.log('test2');
+    console.log(reject);
+  });
