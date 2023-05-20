@@ -1897,7 +1897,18 @@ async function ohNo() {
 }
 
 const funcDec = async () => {
+  throw new Error('oh oh!!!');
   return 'testing function async declaration';
 };
+
+funcDec()
+  .then(data => {
+    console.log('promise fulfilled', data);
+    console.log(data);
+  })
+  .catch(err => {
+    console.log('Promise rejected');
+    console.log(err);
+  });
 
 // AWAIT //
