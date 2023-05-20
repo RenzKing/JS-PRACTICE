@@ -1938,11 +1938,22 @@ const delayedColorChanger = (color, delay) => {
   });
 };
 
-delayedColorChanger('red', 1000)
-  .then(() => delayedColorChanger('orange', 1000))
-  .then(() => delayedColorChanger('yellow', 1000))
-  .then(() => delayedColorChanger('blue', 1000))
-  .then(() => delayedColorChanger('green', 1000))
-  .then(() => delayedColorChanger('indigo', 1000))
-  .then(() => delayedColorChanger('black', 1000))
-  .then(() => delayedColorChanger('white', 1000));
+// delayedColorChanger('red', 1000)
+//   .then(() => delayedColorChanger('orange', 1000))
+//   .then(() => delayedColorChanger('yellow', 1000))
+//   .then(() => delayedColorChanger('blue', 1000))
+//   .then(() => delayedColorChanger('green', 1000))
+//   .then(() => delayedColorChanger('indigo', 1000))
+//   .then(() => delayedColorChanger('black', 1000))
+//   .then(() => delayedColorChanger('white', 1000));
+
+const rainbow = async () => {
+  await delayedColorChanger('red', 1000);
+  await delayedColorChanger('orange', 1000);
+  await delayedColorChanger('blue', 1000);
+  await delayedColorChanger('yellow', 1000);
+  await delayedColorChanger('green', 1000);
+  await delayedColorChanger('white', 1000);
+};
+
+rainbow();
