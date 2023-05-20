@@ -1911,20 +1911,38 @@ const fakeRequestPromise = url => {
 //     console.log(err);
 //   });
 
-const login = async (username, password) => {
-  if (!username || !password) throw 'missing credentials';
-  if (password === 'pass') return 'Welcome!';
-  throw 'Invalid password';
+// const login = async (username, password) => {
+//   if (!username || !password) throw 'missing credentials';
+//   if (password === 'pass') return 'Welcome!';
+//   throw 'Invalid password';
+// };
+
+// login('username', 'pass')
+//   .then(data => {
+//     console.log('Logged in!');
+//     console.log(data);
+//   })
+//   .catch(err => {
+//     console.log('Try again!');
+//     console.log(err);
+//   });
+
+// AWAIT = await is usually used to unwrap promises by passing a Promise as the expression. Using await pauses the execution of its settled(that is, fulfilled or rejected). When execution resumes, the value of the await expression becomes that of the fulfilled promise//
+
+const delayedColorChanger = (color, delay) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      document.body.style.background = color;
+      resolve();
+    }, delay);
+  });
 };
 
-login('username', 'pass')
-  .then(data => {
-    console.log('Logged in!');
-    console.log(data);
-  })
-  .catch(err => {
-    console.log('Try again!');
-    console.log(err);
-  });
-
-// AWAIT //
+delayedColorChanger('red', 1000)
+  .then(() => delayedColorChanger('orange', 1000))
+  .then(() => delayedColorChanger('yellow', 1000))
+  .then(() => delayedColorChanger('blue', 1000))
+  .then(() => delayedColorChanger('green', 1000))
+  .then(() => delayedColorChanger('indigo', 1000))
+  .then(() => delayedColorChanger('black', 1000))
+  .then(() => delayedColorChanger('white', 1000));
