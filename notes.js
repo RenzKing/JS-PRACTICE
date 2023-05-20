@@ -1892,4 +1892,8 @@ async function hello() {
   return 'hello';
 }
 
+async function ohNo() {
+  throw new Error('hello');
+}
+
 // AWAIT //
