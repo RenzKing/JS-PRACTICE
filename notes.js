@@ -1869,20 +1869,23 @@ const fakeRequestPromise = url => {
 //     console.log(err);
 //   });
 
-const delayedColorChange = (newColor, delay) => {
-  return new Promise((fulfill, reject) => {
-    setTimeout(() => {
-      document.body.style.background = newColor;
-      document.body.style.transition = '1s';
-      fulfill();
-    }, delay);
-  });
-};
+// const delayedColorChange = (newColor, delay) => {
+//   return new Promise((fulfill, reject) => {
+//     setTimeout(() => {
+//       document.body.style.background = newColor;
+//       document.body.style.transition = '1s';
+//       fulfill();
+//     }, delay);
+//   });
+// };
 
-delayedColorChange('blue', 1000)
-  .then(() => delayedColorChange('yellow', 1000))
-  .then(() => delayedColorChange('magenta', 1000))
-  .then(() => delayedColorChange('black', 1000))
-  .then(() => delayedColorChange('red', 1000))
-  .then(() => delayedColorChange('white', 1000));
-``;
+// delayedColorChange('blue', 1000)
+//   .then(() => delayedColorChange('yellow', 1000))
+//   .then(() => delayedColorChange('magenta', 1000))
+//   .then(() => delayedColorChange('black', 1000))
+//   .then(() => delayedColorChange('red', 1000))
+//   .then(() => delayedColorChange('white', 1000));
+
+// ASYNC = The Async function declaration declares an async function where the await keyword is permitted within the function body. The async and await keywords enable asynchronus,promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
+
+// AWAIT //
