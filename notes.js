@@ -1896,4 +1896,8 @@ async function ohNo() {
   throw new Error('hello');
 }
 
+const funcDec = async () => {
+  return 'testing function async declaration';
+};
+
 // AWAIT //
