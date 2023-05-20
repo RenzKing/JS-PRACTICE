@@ -1888,26 +1888,42 @@ const fakeRequestPromise = url => {
 
 // ASYNC = The Async function declaration declares an async function where the await keyword is permitted within the function body. The async and await keywords enable asynchronus,promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 
-async function hello() {
-  return 'hello';
-}
+// async function hello() {
+//   return 'hello';
+// }
 
-async function ohNo() {
-  throw new Error('hello');
-}
+// async function ohNo() {
+//   throw new Error('hello');
+// }
 
-const funcDec = async () => {
-  throw new Error('oh oh!!!');
-  return 'testing function async declaration';
+// const funcDec = async () => {
+//   throw new Error('oh oh!!!');
+//   return 'testing function async declaration';
+// };
+
+// funcDec()
+//   .then(data => {
+//     console.log('promise fulfilled', data);
+//     console.log(data);
+//   })
+//   .catch(err => {
+//     console.log('Promise rejected');
+//     console.log(err);
+//   });
+
+const login = async (username, password) => {
+  if (!username || !password) throw 'missing credentials';
+  if (password === 'pass') return 'Welcome!';
+  throw 'Invalid password';
 };
 
-funcDec()
+login('username', 'pass')
   .then(data => {
-    console.log('promise fulfilled', data);
+    console.log('Logged in!');
     console.log(data);
   })
   .catch(err => {
-    console.log('Promise rejected');
+    console.log('Try again!');
     console.log(err);
   });
 
