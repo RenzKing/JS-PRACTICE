@@ -1888,4 +1888,8 @@ const fakeRequestPromise = url => {
 
 // ASYNC = The Async function declaration declares an async function where the await keyword is permitted within the function body. The async and await keywords enable asynchronus,promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 
+async function hello() {
+  return 'hello';
+}
+
 // AWAIT //
