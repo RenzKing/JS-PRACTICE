@@ -1971,7 +1971,7 @@ const fakeRequest = url => {
       if (rand < 0.7) {
         resolve(`Here is your fake data from ${url}`);
       }
-      reject(`Request rejected`);
+      reject(`Request Error`);
     }, 1000);
   });
 };
@@ -1986,6 +1986,13 @@ const fakeRequest = url => {
 //   });
 
 const makeTwoRequest = async data => {
-  let data1 = await fakeRequest('/page1');
-  console.log(data1);
+  try {
+    let data1 = await fakeRequest('/page1');
+    console.log(data1);
+    let data2 = await fakeRequest('/page2');
+    console.log(data2);
+  } catch (e) {
+    console.log('Caught an error');
+    console.log('Error is:', e);
+  }
 };
