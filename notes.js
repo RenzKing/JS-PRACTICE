@@ -2053,3 +2053,8 @@ const fakeRequestPromise = url => {
 // }
 
 // AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is
+
+const prompter = async () => {
+  let promp = Number(prompt('Guess the number?'));
+  let rand = Math.floor(Math.random());
+};
