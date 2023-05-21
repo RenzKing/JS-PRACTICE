@@ -2053,20 +2053,22 @@ const tweetsContainer = document.querySelector('#tweets');
 // }
 
 // AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is
-
+let score = '';
 const prompter = async () => {
   return new Promise((resolve, reject) => {
-    let score = '';
     let promp = Number(prompt('Guess the number?'));
-    let rand = Math.floor(Math.random());
+    let rand = Math.floor(Math.random() * 6) + 1;
+    console.log(rand);
     resolve(() => {
       if (promp === rand) {
         score++;
         console.log(score);
       }
-      reject(() => {
-        console.log('Try again', `${promp}`);
-      });
+      if (promp !== rand) {
+        reject(() => {
+          console.log('Try again', `${promp}`);
+        });
+      }
     });
   });
 };
