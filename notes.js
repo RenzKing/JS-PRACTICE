@@ -2009,21 +2009,47 @@ const fakeRequestPromise = url => {
 //   console.log(`Not a number`);
 // }
 
-const fb = () => {
-  const enter = Number(prompt('Enter number'));
+// const fb = () => {
+//   const enter = Number(prompt('Enter number'));
 
-  if (!isNaN(enter)) {
-    for (let i = 1; i <= 10; i++) {
-      let i = enter;
-    }
-    if (enter % 3 === 0 && enter % 5 === 0) {
-      console.log('FizzBuzz');
-    } else if (enter % 3 === 0) {
-      console.log('Fizz');
-    } else if (enter % 5 === 0) {
-      console.log('Buzz');
-    }
-  } else {
-    console.log(`Not a number`);
-  }
-};
+//   if (!isNaN(enter)) {
+//     for (let i = 1; i <= 10; i++) {
+//       let i = enter;
+//     }
+//     if (enter % 3 === 0 && enter % 5 === 0) {
+//       console.log('FizzBuzz');
+//     } else if (enter % 3 === 0) {
+//       console.log('Fizz');
+//     } else if (enter % 5 === 0) {
+//       console.log('Buzz');
+//     }
+//   } else {
+//     console.log(`Not a number`);
+//   }
+// };
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log('FizzBuzz');
+//   } else if (i % 3 === 0) {
+//     console.log('Fizz');
+//   } else if (i % 5 === 0) {
+//     console.log('Buzz');
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log('FizzBuzz');
+//   } else if (i % 3 === 0) {
+//     console.log('Fizz');
+//   } else if (i % 5 === 0) {
+//     console.log('Buzz');
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+// AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is
