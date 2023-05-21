@@ -1976,11 +1976,16 @@ const fakeRequest = url => {
   });
 };
 
-fakeRequest('www.abc')
-  .then(() => {
-    console.log('Test 1');
-  })
-  .catch(() => {
-    console.log('test2');
-    console.log(reject);
-  });
+// fakeRequest('www.abc')
+//   .then(() => {
+//     console.log('Test 1');
+//   })
+//   .catch(() => {
+//     console.log('test2');
+//     console.log(reject);
+//   });
+
+const makeTwoRequest = async data => {
+  let data1 = await fakeRequest('/page1');
+  console.log(data1);
+};
