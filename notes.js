@@ -1803,19 +1803,19 @@ const tweetsContainer = document.querySelector('#tweets');
 
 //
 
-const fakeRequestPromise = url => {
-  return new Promise((fulfilled, failed) => {
-    const delay = Math.floor(Math.random() * 4500) + 500;
-    console.log(delay);
-    setTimeout(() => {
-      if (delay > 4000) {
-        failed(`Connection Timeout`);
-      } else {
-        fulfilled(`Here is your fake data from ${url}`);
-      }
-    }, delay);
-  });
-};
+// const fakeRequestPromise = url => {
+//   return new Promise((fulfilled, failed) => {
+//     const delay = Math.floor(Math.random() * 4500) + 500;
+//     console.log(delay);
+//     setTimeout(() => {
+//       if (delay > 4000) {
+//         failed(`Connection Timeout`);
+//       } else {
+//         fulfilled(`Here is your fake data from ${url}`);
+//       }
+//     }, delay);
+//   });
+// };
 
 // const request = fakeRequestPromise('google.com/api/map');
 
@@ -2055,6 +2055,26 @@ const fakeRequestPromise = url => {
 // AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is
 
 const prompter = async () => {
-  let promp = Number(prompt('Guess the number?'));
-  let rand = Math.floor(Math.random());
+  return new Promise((resolve, reject) => {
+    let score = '';
+    let promp = Number(prompt('Guess the number?'));
+    let rand = Math.floor(Math.random());
+    resolve(() => {
+      if (promp === rand) {
+        score++;
+        console.log(score);
+      }
+      reject(() => {
+        console.log('Try again', `${promp}`);
+      });
+    });
+  });
 };
+
+prompter()
+  .then(data => {
+    'You guessed it right!';
+  })
+  .catch(e => {
+    console.log('Try Again', e);
+  });
