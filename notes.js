@@ -1927,72 +1927,103 @@ const fakeRequestPromise = url => {
 //     console.log(err);
 //   });
 
-// AWAIT = await is usually used to unwrap promises by passing a Promise as the expression. Using await pauses the execution of its settled(that is, fulfilled or rejected). When execution resumes, the value of the await expression becomes that of the fulfilled promise//
+// // AWAIT = await is usually used to unwrap promises by passing a Promise as the expression. Using await pauses the execution of its settled(that is, fulfilled or rejected). When execution resumes, the value of the await expression becomes that of the fulfilled promise//
 
-const delayedColorChanger = (color, delay) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      document.body.style.background = color;
-      resolve();
-    }, delay);
-  });
-};
-
-// delayedColorChanger('red', 1000)
-//   .then(() => delayedColorChanger('orange', 1000))
-//   .then(() => delayedColorChanger('yellow', 1000))
-//   .then(() => delayedColorChanger('blue', 1000))
-//   .then(() => delayedColorChanger('green', 1000))
-//   .then(() => delayedColorChanger('indigo', 1000))
-//   .then(() => delayedColorChanger('black', 1000))
-//   .then(() => delayedColorChanger('white', 1000));
-
-// const rainbow = async () => {
-//   await delayedColorChanger('red', 1000);
-//   await delayedColorChanger('orange', 1000);
-//   await delayedColorChanger('blue', 1000);
-//   await delayedColorChanger('yellow', 1000);
-//   await delayedColorChanger('green', 1000);
-//   await delayedColorChanger('white', 1000);
-// };
-
-// const printRainbow = async () => {
-//   await rainbow();
-//   console.log('end of the rainbow');
-// };
-
-// printRainbow();
-
-const fakeRequest = url => {
-  return new Promise((resolve, reject) => {
-    const rand = Math.random();
-    console.log(rand);
-    setTimeout(() => {
-      if (rand < 0.7) {
-        resolve(`Here is your fake data from ${url}`);
-      }
-      reject(`Request Error`);
-    }, 1000);
-  });
-};
-
-// fakeRequest('www.abc')
-//   .then(() => {
-//     console.log('Test 1');
-//   })
-//   .catch(() => {
-//     console.log('test2');
-//     console.log(reject);
+// const delayedColorChanger = (color, delay) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       document.body.style.background = color;
+//       resolve();
+//     }, delay);
 //   });
+// };
 
-const makeTwoRequest = async data => {
-  try {
-    let data1 = await fakeRequest('/page1');
-    console.log(data1);
-    let data2 = await fakeRequest('/page2');
-    console.log(data2);
-  } catch (e) {
-    console.log('Caught an error');
-    console.log('Error is:', e);
+// // delayedColorChanger('red', 1000)
+// //   .then(() => delayedColorChanger('orange', 1000))
+// //   .then(() => delayedColorChanger('yellow', 1000))
+// //   .then(() => delayedColorChanger('blue', 1000))
+// //   .then(() => delayedColorChanger('green', 1000))
+// //   .then(() => delayedColorChanger('indigo', 1000))
+// //   .then(() => delayedColorChanger('black', 1000))
+// //   .then(() => delayedColorChanger('white', 1000));
+
+// // const rainbow = async () => {
+// //   await delayedColorChanger('red', 1000);
+// //   await delayedColorChanger('orange', 1000);
+// //   await delayedColorChanger('blue', 1000);
+// //   await delayedColorChanger('yellow', 1000);
+// //   await delayedColorChanger('green', 1000);
+// //   await delayedColorChanger('white', 1000);
+// // };
+
+// // const printRainbow = async () => {
+// //   await rainbow();
+// //   console.log('end of the rainbow');
+// // };
+
+// // printRainbow();
+
+// const fakeRequest = url => {
+//   return new Promise((resolve, reject) => {
+//     const rand = Math.random();
+//     console.log(rand);
+//     setTimeout(() => {
+//       if (rand < 0.7) {
+//         resolve(`Here is your fake data from ${url}`);
+//       }
+//       reject(`Request Error`);
+//     }, 1000);
+//   });
+// };
+
+// // fakeRequest('www.abc')
+// //   .then(() => {
+// //     console.log('Test 1');
+// //   })
+// //   .catch(() => {
+// //     console.log('test2');
+// //     console.log(reject);
+// //   });
+
+// const makeTwoRequest = async data => {
+//   try {
+//     let data1 = await fakeRequest('/page1');
+//     console.log(data1);
+//     let data2 = await fakeRequest('/page2');
+//     console.log(data2);
+//   } catch (e) {
+//     console.log('Caught an error');
+//     console.log('Error is:', e);
+//   }
+// };
+
+// const bodyTempInput = Number(prompt(`Enter your body temperature`));
+
+// if (bodyTempInput <= 36.0) {
+//   console.log(`Your body temperature is below normal`);
+// } else if (bodyTempInput >= 36.1 && bodyTempInput <= 37.2) {
+//   console.log(`Your body temperature is normal`);
+// } else if (bodyTempInput >= 37.3) {
+//   console.log(`Your body temperature is above normal`);
+// } else {
+//   console.log(`Not a number`);
+// }
+
+const fb = () => {
+  const enter = Number(prompt('Enter number'));
+
+  if (!isNaN(enter)) {
+    for (let i = 1; i <= 10; i++) {
+      let i = enter;
+    }
+    if (enter % 3 === 0 && enter % 5 === 0) {
+      console.log('FizzBuzz');
+    } else if (enter % 3 === 0) {
+      console.log('Fizz');
+    } else if (enter % 5 === 0) {
+      console.log('Buzz');
+    }
+  } else {
+    console.log(`Not a number`);
   }
 };
