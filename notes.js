@@ -2052,7 +2052,8 @@ const tweetsContainer = document.querySelector('#tweets');
 //   }
 // }
 
-// AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is
+// AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with the servers. It can send and receive information in various formats, including JSON,XML,HTML, and text files. AJAX's most appealing characteristic is its "asychronus" nature which means it can communicate with the server, exchange data and update the page without having to refresh the page.
+
 let score = '';
 const prompter = async () => {
   return new Promise((resolve, reject) => {
