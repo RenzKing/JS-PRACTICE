@@ -2081,3 +2081,5 @@ prompter()
   .catch(e => {
     console.log('Try Again', e);
   });
+
+// API = API stands for Application Programming Interface and is a concept that is not limited or specific to Javascript, but is used in almost all web application languages. being a web developer, it is expected that you know about API, so let's try to understand the concept first.
