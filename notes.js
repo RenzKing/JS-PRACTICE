@@ -2247,3 +2247,5 @@
 // HTTP STATUS CODE = An HTTP status code is a message a website's server sends to the browser to indicate whether or not that request can be fulfilled.
 
 // QUERY STRING = A Query string is a set of characters tacked onto the end of a URL. The query string begins after the question mark(?) and can include one or more parameters. Each parameter is represented by a unique key-value pair or a set of two linked data items. An equals sign(=) seprates each key and value
+
+// XHRs = XHMLHttpRequest is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment.
