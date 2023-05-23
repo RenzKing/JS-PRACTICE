@@ -2084,4 +2084,7 @@ prompter()
 
 // API = API stands for Application Programming Interface and is a concept that is not limited or specific to Javascript, but is used in almost all web application languages. being a web developer, it is expected that you know about API, so let's try to understand the concept first.
 
-//
+// JSON = JSON stands for JavaScript Object Notation
+// JSON is a lightweight format for storing and transporting data
+// JSON is often used when data is sent from a server to a web page
+// JSON is "self-describing" and easy to understand
