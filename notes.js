@@ -2054,7 +2054,38 @@
 
 // AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with the servers. It can send and receive information in various formats, including JSON,XML,HTML, and text files. AJAX's most appealing characteristic is its "asychronus" nature which means it can communicate with the server, exchange data and update the page without having to refresh the page.
 
-// let score = '';
+// prompter()
+//   .then(data => {
+//     'You guessed it right!';
+//   })
+//   .catch(e => {
+//     console.log('Try Again', e);
+//   });
+
+// API = API stands for Application Programming Interface and is a concept that is not limited or specific to Javascript, but is used in almost all web application languages. being a web developer, it is expected that you know about API, so let's try to understand the concept first.
+
+// JSON = JSON stands for JavaScript Object Notation
+// JSON is a lightweight format for storing and transporting data
+// JSON is often used when data is sent from a server to a web page
+// JSON is "self-describing" and easy to understand
+
+// const data = `
+//   {"USD":211.1,"JPY":122.2,"EUR":333.3}`;
+
+// const parseData = JSON.parse(data);
+
+// const dog = {
+//   breed: 'lab',
+//   color: 'black',
+//   isAlive: true,
+//   owner: undefined,
+// };
+
+// const stringifyDog = JSON.stringify(dog);
+
+// Guessing game //
+
+// let score = 0;
 // const prompter = async () => {
 //   return new Promise((resolve, reject) => {
 //     let promp = Number(prompt('Guess the number?'));
@@ -2074,30 +2105,36 @@
 //   });
 // };
 
-// prompter()
-//   .then(data => {
-//     'You guessed it right!';
-//   })
-//   .catch(e => {
-//     console.log('Try Again', e);
-//   });
-
-// API = API stands for Application Programming Interface and is a concept that is not limited or specific to Javascript, but is used in almost all web application languages. being a web developer, it is expected that you know about API, so let's try to understand the concept first.
-
-// JSON = JSON stands for JavaScript Object Notation
-// JSON is a lightweight format for storing and transporting data
-// JSON is often used when data is sent from a server to a web page
-// JSON is "self-describing" and easy to understand
-
-const data = `
-  {"USD":211.1,"JPY":122.2,"EUR":333.3}`;
-
-const parseData = JSON.parse(data);
-
-const dog = {
-  breed: 'lab',
-  color: 'black',
-  isAlive: true,
+let score = 0;
+const prompter = async () => {
+  return new Promise((resolve, reject) => {
+    const userInput = Number(prompt('Please enter number'));
+    const rand = Math.floor(Math.random() * 6) + 1;
+    console.log(rand);
+    if (!isNaN(userInput)) {
+      if (rand === userInput) {
+        console.log('This is correct!');
+        score++;
+        console.log(`your is score is ${score}`);
+        resolve();
+      }
+      if (rand !== userInput) {
+        throw new Error('This is incorrect!');
+        score--;
+        console.log(`your is score is ${score}`);
+        reject();
+      }
+    }
+  });
 };
 
-const stringifyDog = JSON.stringify(dog);
+prompter()
+  .then(data => {
+    console.log(data);
+    prompter();
+  })
+  .catch(error => {
+    console.log(error);
+    confirm('would you like to try again?');
+    prompter();
+  });
