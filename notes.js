@@ -2203,3 +2203,5 @@
 // };
 
 // handleGuessingGame();
+
+// POSTMAN = Postman can be used to write functional tests, integration test, regression tests, and more. Postman's Node.js-based runtime contains supprot for common patterns and libraries that you can use to build tests quickly.
