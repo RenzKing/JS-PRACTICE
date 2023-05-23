@@ -2339,12 +2339,26 @@
 
 // SETTING HEADERS WITH AXIOS
 
-const getJoke = async () => {
-  const config = { headers: { Accept: 'application/json' } };
-  const res = await axios.get('https://icanhazdadjoke.com', config);
-  console.log(res.data.joke);
-};
-getJoke();
+// const jokes = document.querySelector('#jokes');
+// const btn = document.querySelector('button');
 
-const joke = document.querySelector('button');
-joke.addEventListener('click', getJoke);
+// const addNewJoke = async () => {
+//   const jokeText = await getJoke();
+//   const newLi = document.createElement('li');
+//   newLi.append(jokeText);
+//   jokes.append(newLi);
+// };
+
+// const getJoke = async () => {
+//   try {
+//     const config = { headers: { Accept: 'application/json' } };
+//     const res = await axios.get('https://icanhazdadjoke.com', config);
+//     return res.data.joke;
+//   } catch (e) {
+//     return 'joke is not available';
+//   }
+// };
+
+// getJoke();
+
+// btn.addEventListener('click', addNewJoke);
