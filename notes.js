@@ -2249,3 +2249,22 @@
 // QUERY STRING = A Query string is a set of characters tacked onto the end of a URL. The query string begins after the question mark(?) and can include one or more parameters. Each parameter is represented by a unique key-value pair or a set of two linked data items. An equals sign(=) seprates each key and value
 
 // XHRs = XHMLHttpRequest is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment.
+
+// const request = new XMLHttpRequest();
+
+// // This will run when there is no error
+// request.onload = function () {
+//   console.log('It loaded');
+//   console.log(this.responseText);
+// };
+
+// // This will run when there is an error
+// request.onerror = function () {
+//   console.log('Error');
+//   console.log(this);
+// };
+
+// request.open('Get', 'https://swapi.dev/api/people/1');
+// request.send();
+
+// FETCH = The Fetch API provides a JavaScript interface for accessing and manipulating parts of the protocol, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronusly across the network.
