@@ -2345,3 +2345,6 @@ const getJoke = async () => {
   console.log(res.data.joke);
 };
 getJoke();
+
+const joke = document.querySelector('button');
+joke.addEventListener('click', getJoke);
