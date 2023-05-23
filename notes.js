@@ -2105,36 +2105,99 @@
 //   });
 // };
 
+// let score = 0;
+// const prompter = async () => {
+//   return new Promise((resolve, reject) => {
+//     const userInput = Number(prompt('Please enter number'));
+//     const rand = Math.floor(Math.random() * 6) + 1;
+//     console.log(rand);
+//     if (!isNaN(userInput)) {
+//       if (rand === userInput) {
+//         console.log('This is correct!');
+//         score++;
+//         console.log(`your is score is ${score}`);
+//         resolve();
+//       }
+//       if (rand !== userInput) {
+//         throw new Error('This is incorrect!');
+//         score--;
+//         console.log(`your is score is ${score}`);
+//         reject();
+//       }
+//     }
+//   });
+// };
+
+// prompter()
+//   .then(data => {
+//     console.log(data);
+//   })
+//   .catch(error => {
+//     console.log(error);
+//     confirm('would you like to try again?');
+//     prompter();
+//   });
+
 let score = 0;
-const prompter = async () => {
+const numberInput = () => {
   return new Promise((resolve, reject) => {
-    const userInput = Number(prompt('Please enter number'));
-    const rand = Math.floor(Math.random() * 6) + 1;
-    console.log(rand);
-    if (!isNaN(userInput)) {
-      if (rand === userInput) {
-        console.log('This is correct!');
-        score++;
-        console.log(`your is score is ${score}`);
-        resolve();
-      }
-      if (rand !== userInput) {
-        throw new Error('This is incorrect!');
-        score--;
-        console.log(`your is score is ${score}`);
-        reject();
-      }
+    //  USER INPUT
+    const userInput = Number(prompt('Enter your number from 1-6'));
+
+    // GENERATE RANDOM NUMBER FROM 1-6
+    const randomNumber = Math.floor(Math.random() * 6) + 1;
+    // VALIDATE IF THE USER INPUT IS A VALID NUMBER
+    if (isNaN(userInput)) {
+      reject(new Error('Your input is not a valid number'));
+    }
+
+    // CHECK IF THE USER INPUT AND GENERATED NUMBER IS THE SAME
+    if (userInput === randomNumber) {
+      score++;
+      resolve({
+        point: 1,
+        randomNumber,
+      });
+    } else {
+      score--;
+      resolve({
+        point: 0,
+        randomNumber,
+      });
     }
   });
 };
 
-prompter()
-  .then(data => {
-    console.log(data);
-    prompter();
-  })
-  .catch(error => {
-    console.log(error);
-    confirm('would you like to try again?');
-    prompter();
+// FUNCTION IF THE USER STILL WANTS TO CONTINUE A GAME
+const continueGame = () => {
+  return new Promise((resolve, reject) => {
+    if (confirm('do you want to play')) {
+      resolve(true);
+    } else {
+      resolve(false);
+    }
   });
+};
+
+// WILL HANDLE THE GUESSING GAME
+const handleGuessingGame = async () => {
+  try {
+    // INVOKE NUMBERINPUT() FUNCTION
+    const result = await numberInput();
+    alert(
+      `Generated Number: ${result.randomNumber}. you got ${result.point}. you're current score is ${score}`
+    );
+    // INVOKE CONTINUEGAME() FUNCTION
+    const istoContinue = await continueGame();
+    // CHECK IF USER STILL WANTS TO CONTINUE THE GAME
+    if (istoContinue) {
+      handleGuessingGame();
+    } else {
+      alert(`Game over! Your total score is ${score}`);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+handleGuessingGame();
