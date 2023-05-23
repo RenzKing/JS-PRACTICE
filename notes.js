@@ -2268,3 +2268,26 @@
 // request.send();
 
 // FETCH = The Fetch API provides a JavaScript interface for accessing and manipulating parts of the protocol, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronusly across the network.
+
+// const fetchs = fetch('https://swapi.dev/api/people/1')
+//   .then(res => {
+//     console.log('resloved', res);
+//     return res.json();
+//   })
+//   .then(data => {
+//     console.log(data);
+//   })
+
+//   .catch(e => {
+//     console.log(e);
+//   });
+
+// FETCH USING ASYNC
+
+const loadStarWarsChar = async () => {
+  const response = await fetch('https://swapi.dev/api/people/1');
+  const data = await response.json();
+  console.log(data);
+};
+
+loadStarWarsChar();
