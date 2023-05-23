@@ -2305,3 +2305,34 @@
 // loadStarWarsChar();
 
 // AXIOS = Axios is a promised-based HTTP client for JavaScript. It has the ability to make HTTP request from the browser and handle the transformation of request and response data.
+
+// axios
+//   .get('https://swapi.dev/api/people/3')
+//   .then(res => {
+//     console.log('response:', res);
+//   })
+//   .catch(e => {
+//     console.log('errorrrrrr');
+//   });
+
+// ASYNC AXIOS
+
+// const getStarWarsChar = async () => {
+//   const res = await axios.get('https://swapi.dev/api/people/3');
+//   console.log(res.data);
+// };
+
+// getStarWarsChar();
+
+// USING TRY AND CATCH WITH ID
+
+const getStarWarsChar = async id => {
+  try {
+    const res = await axios.get(`https://swapi.dev/api/people/${id}`);
+    console.log(res.data);
+  } catch (e) {
+    console.log('Error', e);
+  }
+};
+
+getStarWarsChar(4);
