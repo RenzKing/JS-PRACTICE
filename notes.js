@@ -2138,66 +2138,68 @@
 //     prompter();
 //   });
 
-let score = 0;
-const numberInput = () => {
-  return new Promise((resolve, reject) => {
-    //  USER INPUT
-    const userInput = Number(prompt('Enter your number from 1-6'));
+// GUESSING GAME
 
-    // GENERATE RANDOM NUMBER FROM 1-6
-    const randomNumber = Math.floor(Math.random() * 6) + 1;
-    // VALIDATE IF THE USER INPUT IS A VALID NUMBER
-    if (isNaN(userInput)) {
-      reject(new Error('Your input is not a valid number'));
-    }
+// let score = 0;
+// const numberInput = () => {
+//   return new Promise((resolve, reject) => {
+//     //  USER INPUT
+//     const userInput = Number(prompt('Enter your number from 1-6'));
 
-    // CHECK IF THE USER INPUT AND GENERATED NUMBER IS THE SAME
-    if (userInput === randomNumber) {
-      score++;
-      resolve({
-        point: 1,
-        randomNumber,
-      });
-    } else {
-      score--;
-      resolve({
-        point: 0,
-        randomNumber,
-      });
-    }
-  });
-};
+//     // GENERATE RANDOM NUMBER FROM 1-6
+//     const randomNumber = Math.floor(Math.random() * 6) + 1;
+//     // VALIDATE IF THE USER INPUT IS A VALID NUMBER
+//     if (isNaN(userInput)) {
+//       reject(new Error('Your input is not a valid number'));
+//     }
 
-// FUNCTION IF THE USER STILL WANTS TO CONTINUE A GAME
-const continueGame = () => {
-  return new Promise((resolve, reject) => {
-    if (confirm('do you want to play')) {
-      resolve(true);
-    } else {
-      resolve(false);
-    }
-  });
-};
+//     // CHECK IF THE USER INPUT AND GENERATED NUMBER IS THE SAME
+//     if (userInput === randomNumber) {
+//       score++;
+//       resolve({
+//         point: 1,
+//         randomNumber,
+//       });
+//     } else {
+//       score--;
+//       resolve({
+//         point: 0,
+//         randomNumber,
+//       });
+//     }
+//   });
+// };
 
-// WILL HANDLE THE GUESSING GAME
-const handleGuessingGame = async () => {
-  try {
-    // INVOKE NUMBERINPUT() FUNCTION
-    const result = await numberInput();
-    alert(
-      `Generated Number: ${result.randomNumber}. you got ${result.point}. you're current score is ${score}`
-    );
-    // INVOKE CONTINUEGAME() FUNCTION
-    const istoContinue = await continueGame();
-    // CHECK IF USER STILL WANTS TO CONTINUE THE GAME
-    if (istoContinue) {
-      handleGuessingGame();
-    } else {
-      alert(`Game over! Your total score is ${score}`);
-    }
-  } catch (error) {
-    console.log(error);
-  }
-};
+// // FUNCTION IF THE USER STILL WANTS TO CONTINUE A GAME
+// const continueGame = () => {
+//   return new Promise((resolve, reject) => {
+//     if (confirm('do you want to play')) {
+//       resolve(true);
+//     } else {
+//       resolve(false);
+//     }
+//   });
+// };
 
-handleGuessingGame();
+// // WILL HANDLE THE GUESSING GAME
+// const handleGuessingGame = async () => {
+//   try {
+//     // INVOKE NUMBERINPUT() FUNCTION
+//     const result = await numberInput();
+//     alert(
+//       `Generated Number: ${result.randomNumber}. you got ${result.point}. you're current score is ${score}`
+//     );
+//     // INVOKE CONTINUEGAME() FUNCTION
+//     const istoContinue = await continueGame();
+//     // CHECK IF USER STILL WANTS TO CONTINUE THE GAME
+//     if (istoContinue) {
+//       handleGuessingGame();
+//     } else {
+//       alert(`Game over! Your total score is ${score}`);
+//     }
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+// handleGuessingGame();
