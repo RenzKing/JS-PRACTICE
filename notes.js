@@ -2243,3 +2243,5 @@
 // console.log(test);
 
 // HTTP VERBS = HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs.
+
+// HTTP STATUS CODE = An HTTP status code is a message a website's server sends to the browser to indicate whether or not that request can be fulfilled.
