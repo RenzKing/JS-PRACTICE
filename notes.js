@@ -2285,9 +2285,21 @@
 // FETCH USING ASYNC
 
 const loadStarWarsChar = async () => {
-  const response = await fetch('https://swapi.dev/api/people/1');
-  const data = await response.json();
-  console.log(data);
+  try {
+    const response = await fetch('https://swapi.dev/api/people/1');
+    const data = await response.json();
+    console.log(data);
+
+    const response2 = await fetch('https://swapi.dev/api/people/2');
+    const data2 = await response2.json();
+    console.log(data2);
+
+    const response3 = await fetch('https://swapi.dev/api/people/3');
+    const data3 = await response3.json();
+    console.log(data3);
+  } catch (e) {
+    console.log('Error', e);
+  }
 };
 
 loadStarWarsChar();
