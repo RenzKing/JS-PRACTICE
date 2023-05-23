@@ -2326,13 +2326,22 @@
 
 // USING TRY AND CATCH WITH ID
 
-const getStarWarsChar = async id => {
-  try {
-    const res = await axios.get(`https://swapi.dev/api/people/${id}`);
-    console.log(res.data);
-  } catch (e) {
-    console.log('Error', e);
-  }
-};
+// const getStarWarsChar = async id => {
+//   try {
+//     const res = await axios.get(`https://swapi.dev/api/people/${id}`);
+//     console.log(res.data);
+//   } catch (e) {
+//     console.log('Error', e);
+//   }
+// };
 
-getStarWarsChar(4);
+// getStarWarsChar(4);
+
+// SETTING HEADERS WITH AXIOS
+
+const getJoke = async () => {
+  const config = { headers: { Accept: 'application/json' } };
+  const res = await axios.get('https://icanhazdadjoke.com', config);
+  console.log(res.data.joke);
+};
+getJoke();
