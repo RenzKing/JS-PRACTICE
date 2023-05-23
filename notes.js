@@ -1627,8 +1627,8 @@
 // EVENT DELEGATION = Javascript event delegation is a simple techinique by which you add a single event handler to a parent element in order to avoid having to add event handlers to multiple child elements.
 
 // const lis = document.querySelectorAll('li');
-const tweetForm = document.querySelector('#tweetForm');
-const tweetsContainer = document.querySelector('#tweets');
+// const tweetForm = document.querySelector('#tweetForm');
+// const tweetsContainer = document.querySelector('#tweets');
 
 // DELETE LI WHEN CLICKED //
 // for (let li of lis) {
@@ -2054,33 +2054,33 @@ const tweetsContainer = document.querySelector('#tweets');
 
 // AJAX = AJAX stands for Asynchronus JavScript And SML. In a nutshell, it is the use of the XMLHttpRequest object to communicate with the servers. It can send and receive information in various formats, including JSON,XML,HTML, and text files. AJAX's most appealing characteristic is its "asychronus" nature which means it can communicate with the server, exchange data and update the page without having to refresh the page.
 
-let score = '';
-const prompter = async () => {
-  return new Promise((resolve, reject) => {
-    let promp = Number(prompt('Guess the number?'));
-    let rand = Math.floor(Math.random() * 6) + 1;
-    console.log(rand);
-    resolve(() => {
-      if (promp === rand) {
-        score++;
-        console.log(score);
-      }
-      if (promp !== rand) {
-        reject(() => {
-          console.log('Try again', `${promp}`);
-        });
-      }
-    });
-  });
-};
+// let score = '';
+// const prompter = async () => {
+//   return new Promise((resolve, reject) => {
+//     let promp = Number(prompt('Guess the number?'));
+//     let rand = Math.floor(Math.random() * 6) + 1;
+//     console.log(rand);
+//     resolve(() => {
+//       if (promp === rand) {
+//         score++;
+//         console.log(score);
+//       }
+//       if (promp !== rand) {
+//         reject(() => {
+//           console.log('Try again', `${promp}`);
+//         });
+//       }
+//     });
+//   });
+// };
 
-prompter()
-  .then(data => {
-    'You guessed it right!';
-  })
-  .catch(e => {
-    console.log('Try Again', e);
-  });
+// prompter()
+//   .then(data => {
+//     'You guessed it right!';
+//   })
+//   .catch(e => {
+//     console.log('Try Again', e);
+//   });
 
 // API = API stands for Application Programming Interface and is a concept that is not limited or specific to Javascript, but is used in almost all web application languages. being a web developer, it is expected that you know about API, so let's try to understand the concept first.
 
@@ -2088,3 +2088,8 @@ prompter()
 // JSON is a lightweight format for storing and transporting data
 // JSON is often used when data is sent from a server to a web page
 // JSON is "self-describing" and easy to understand
+
+const data = `
+  {"USD":211.1,"JPY":122.2,"EUR":333.3}`;
+
+const parseData = JSON.parse(data);
