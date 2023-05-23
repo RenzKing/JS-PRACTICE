@@ -2093,3 +2093,11 @@ const data = `
   {"USD":211.1,"JPY":122.2,"EUR":333.3}`;
 
 const parseData = JSON.parse(data);
+
+const dog = {
+  breed: 'lab',
+  color: 'black',
+  isAlive: true,
+};
+
+const stringifyDog = JSON.stringify(dog);
