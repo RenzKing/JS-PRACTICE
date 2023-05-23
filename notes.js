@@ -2245,3 +2245,5 @@
 // HTTP VERBS = HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred to as HTTP verbs.
 
 // HTTP STATUS CODE = An HTTP status code is a message a website's server sends to the browser to indicate whether or not that request can be fulfilled.
+
+// QUERY STRING = A Query string is a set of characters tacked onto the end of a URL. The query string begins after the question mark(?) and can include one or more parameters. Each parameter is represented by a unique key-value pair or a set of two linked data items. An equals sign(=) seprates each key and value
