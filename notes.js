@@ -2365,25 +2365,29 @@
 
 // TV SHOW SEARCH EXAMPLE //
 
-const form = document.querySelector('#searchForm');
+// const form = document.querySelector('#searchForm');
 
-form.addEventListener('submit', async function (e) {
-  e.preventDefault();
+// form.addEventListener('submit', async function (e) {
+//   e.preventDefault();
 
-  const searchTerm = form.elements.query.value;
-  const config = { params: { q: searchTerm } };
-  const res = await axios.get(`https://api.tvmaze.com/search/shows?`, config);
+//   const searchTerm = form.elements.query.value;
+//   const config = { params: { q: searchTerm } };
+//   const res = await axios.get(`https://api.tvmaze.com/search/shows?`, config);
 
-  displayImages(res.data);
-  form.elements.query.value = '';
-});
+//   displayImages(res.data);
+//   form.elements.query.value = '';
+// });
 
-const displayImages = shows => {
-  for (let result of shows) {
-    if (result.show.image) {
-      const img = document.createElement('img');
-      img.src = result.show.image.medium;
-      document.body.append(img);
-    }
-  }
-};
+// const displayImages = shows => {
+//   for (let result of shows) {
+//     if (result.show.image) {
+//       const img = document.createElement('img');
+//       img.src = result.show.image.medium;
+//       document.body.append(img);
+//     }
+//   }
+// };
+
+//
+
+// PROTOTYPE = Prototypes are the mechanism by which Javascript objects inherit features from one another.
