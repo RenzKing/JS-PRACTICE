@@ -2363,6 +2363,8 @@
 
 // btn.addEventListener('click', addNewJoke);
 
+// TV SHOW SEARCH EXAMPLE //
+
 const form = document.querySelector('#searchForm');
 
 form.addEventListener('submit', async function (e) {
@@ -2378,8 +2380,10 @@ form.addEventListener('submit', async function (e) {
 
 const displayImages = shows => {
   for (let result of shows) {
-    const img = document.createElement('img');
-    img.src = result.show.image.medium;
-    document.body.append(img);
+    if (result.show.image) {
+      const img = document.createElement('img');
+      img.src = result.show.image.medium;
+      document.body.append(img);
+    }
   }
 };
