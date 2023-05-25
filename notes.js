@@ -2411,3 +2411,48 @@
 // arr.push(4);
 
 // OBJECT ORIENTED PROGRAMMING (OOP) = is a style of programming characterized by the identification of classes of objects closely linked with the methods(functions) with which they are associated. it also includes ideas of inheritance of attributes and methods
+
+// 4 PILLARS OF OOP
+// -Encapsulation = In OOP, encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components
+// -Abstraction = is the concept of OOP that "shows" only essential attributes and "hides" unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.
+// -Inheritance
+// -Polymorphism
+
+OOP
+Combine a group of relate variables and function into a UNIT. 
+-UNIT is what we call an OBJECT.
+-VARIABLE is what we call PROPERTY
+-FUNCTION is what we call as METHOD
+
+***EXAMPLE***
+
+CAR:Object with Properties
+
+Properties:
+model,color,make
+
+Methods:
+start(),stop(),move()
+
+// PROCEDURAL PROGRAMMING
+
+let basePay = 10000;
+let overtimePay = 10;
+let rate = 500;
+
+ const getWage = (basePay,overtimePay,rate) => {
+  return basePay +(overtimePay * rate)
+ }
+
+ // OOP WAY ENCAPSULATION
+
+ let eployee = {
+  baseSalary: 10000,
+  ovetimePay: 10,
+  rate:500,
+  getWage: function () {
+    return this.baseSalary+(this.overtimePay * this.rate)
+  }
+ }
+
+ 
