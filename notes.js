@@ -2391,3 +2391,5 @@
 //
 
 // PROTOTYPE = Prototypes are the mechanism by which Javascript objects inherit features from one another.
+
+console.log(Array.prototype);
