@@ -2418,48 +2418,46 @@
 // -Inheritance = is one of the core concepts of OOP languages. It is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of attributes and methods
 // -Polymorphism = is another fundamental concept in OOP, which means multiple forms. Polymorphism allows the use of a single interface with different underlying forms, such as data types or classes.
 
-OOP
-Combine a group of relate variables and function into a UNIT. 
--UNIT is what we call an OBJECT.
--VARIABLE is what we call PROPERTY
--FUNCTION is what we call as METHOD
+// OOP
+// Combine a group of relate variables and function into a UNIT.
+// -UNIT is what we call an OBJECT.
+// -VARIABLE is what we call PROPERTY
+// -FUNCTION is what we call as METHOD
 
-***EXAMPLE***
+// ***EXAMPLE***
 
-CAR:Object with Properties
+// CAR:Object with Properties
 
-Properties:
-model,color,make
+// Properties:
+// model,color,make
 
-Methods:
-start(),stop(),move()
+// Methods:
+// start(),stop(),move()
 
-// PROCEDURAL PROGRAMMING
+// // PROCEDURAL PROGRAMMING
 
-let basePay = 10000;
-let overtimePay = 10;
-let rate = 500;
+// let basePay = 10000;
+// let overtimePay = 10;
+// let rate = 500;
 
- const getWage = (basePay,overtimePay,rate) => {
-  return basePay +(overtimePay * rate)
- }
+//  const getWage = (basePay,overtimePay,rate) => {
+//   return basePay +(overtimePay * rate)
+//  }
 
- // OOP WAY ENCAPSULATION
+//  // OOP WAY ENCAPSULATION
 
- let eployee = {
-  baseSalary: 10000,
-  ovetimePay: 10,
-  rate:500,
-  getWage: function () {
-    return this.baseSalary+(this.overtimePay * this.rate)
-  }
- }
+//  let eployee = {
+//   baseSalary: 10000,
+//   ovetimePay: 10,
+//   rate:500,
+//   getWage: function () {
+//     return this.baseSalary+(this.overtimePay * this.rate)
+//   }
+//  }
 
+// // BENFITS OF OOP
 
-
-// BENFITS OF OOP
-
-Encapsulation: We group related variables and functions together. We can use these objects in diffent parts of a program.
-Abstraction: Hiding of details and shows only the essentials. This reduces complexity and isolates the impact of changes.
-Inheritance: Can eliminate redundant code.
-Polymorphism: We can refactor conditional statments if/elseif/else; switch/case
+// Encapsulation: We group related variables and functions together. We can use these objects in diffent parts of a program.
+// Abstraction: Hiding of details and shows only the essentials. This reduces complexity and isolates the impact of changes.
+// Inheritance: Can eliminate redundant code.
+// Polymorphism: We can refactor conditional statments if/elseif/else; switch/case
