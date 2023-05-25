@@ -2402,10 +2402,12 @@
 
 // console.log(name.renz());
 
-Array.prototype.push = () => {
-  alert('this is element will not be added to array');
-};
+// Array.prototype.push = () => {
+//   alert('this is element will not be added to array');
+// };
 
-const arr = [1, 2, 3];
+// const arr = [1, 2, 3];
 
-arr.push(4);
+// arr.push(4);
+
+// OBJECT ORIENTED PROGRAMMING (OOP) = is a style of programming characterized by the identification of classes of objects closely linked with the methods(functions) with which they are associated. it also includes ideas of inheritance of attributes and methods
