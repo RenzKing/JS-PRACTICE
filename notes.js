@@ -2415,7 +2415,7 @@
 // 4 PILLARS OF OOP
 // -Encapsulation = In OOP, encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components
 // -Abstraction = is the concept of OOP that "shows" only essential attributes and "hides" unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.
-// -Inheritance
+// -Inheritance = is one of the core concepts of OOP languages. It is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of attributes and methods
 // -Polymorphism
 
 OOP
@@ -2455,4 +2455,8 @@ let rate = 500;
   }
  }
 
- 
+ // BENEFITS OF ABSTRACTION
+
+ -Simpler Interface of Object
+ -Reduce the impact of Change
+
