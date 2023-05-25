@@ -2392,4 +2392,12 @@
 
 // PROTOTYPE = Prototypes are the mechanism by which Javascript objects inherit features from one another.
 
-console.log(Array.prototype);
+String.prototype.renz = () => {
+  alert('This is a Renz sample function');
+};
+
+console.log(String.prototype);
+
+const name = 'king';
+
+console.log(name.renz());
